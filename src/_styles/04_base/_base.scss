@@ -6,6 +6,12 @@
  * Customize the background color to match your design.
  */
 
+ a{
+ 	&:hover{
+ 		text-decoration: underline;
+ 	}
+ }
+
 /*::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
