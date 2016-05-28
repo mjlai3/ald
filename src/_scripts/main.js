@@ -13,6 +13,9 @@ import Footer from '../_modules/footer/footer';
 
 $(() => {
 	
-	
+	$(".foo").slick({
+	    autoplay: true,
+	    dots: true
+	});
 
 });

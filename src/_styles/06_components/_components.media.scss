@@ -22,3 +22,33 @@
 		}
 	}
 }
+
+$c1: #3a8999;
+$c2: #e84a69;
+
+.foo {
+    width: auto;
+    margin: 30px 50px 50px;
+}
+
+.slick-slide {
+    background: $c1;
+    color: white;
+    padding: 40px 0;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    color: black;    
+}
+
+.slick-dots {
+    bottom: -30px;
+}
+
+.slick-slide:nth-child(odd) {
+     background: $c2;
+}
