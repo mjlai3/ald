@@ -1,0 +1,24 @@
+.media{
+	&__container{
+		@include m-bgcolor('media');
+		@include m-color('white');
+		text-align: center;
+	}
+
+	&__title{
+
+	}
+
+	&__text{
+
+	}
+
+	&__social{
+
+		&__container{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
