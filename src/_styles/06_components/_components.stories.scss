@@ -1,0 +1,7 @@
+.stories{
+
+	&__container{
+		@include m-bgcolor('stories');
+		border-top: 1px dashed grey;
+	}
+}

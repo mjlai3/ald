@@ -26,9 +26,8 @@
 $c1: #3a8999;
 $c2: #e84a69;
 
-.foo {
-    width: auto;
-    margin: 30px 50px 50px;
+.stories__container {
+    width: 100%;
 }
 
 .slick-slide {
@@ -39,10 +38,20 @@ $c2: #e84a69;
     font-family: "Arial", "Helvetica";
     text-align: center;
 }
+.slick-prev {
+    left: 25px;
+    z-index: 1;
+}
 
+.slick-next {
+    right: 25px;
+}
 .slick-prev:before, 
 .slick-next:before {
     color: black;    
+}
+.slick-next:before{
+
 }
 
 .slick-dots {
