@@ -1,0 +1,35 @@
+// Normalize Styles
+@import 'node_modules/normalize.css/normalize';
+
+// Import Modules
+@import '../_modules/header/header';
+@import '../_modules/footer/footer';
+
+@import "01_settings/_settings.colors.scss";
+@import "01_settings/_settings.foundation.scss";
+@import "01_settings/_settings.zindex.scss";
+@import "02_tools/_tools.function.color.scss";
+@import "02_tools/_tools.mixin.color.scss";
+@import "02_tools/_tools.mixin.mq.scss";
+@import "02_tools/_tools.mixin.zindex.scss";
+@import "03_generic/_generic.fonts.scss";
+@import "06_components/_components.column.scss";
+@import "06_components/_components.footer.scss";
+@import "06_components/_components.header.scss";
+
+// Import Foundation Module
+@import "../../node_modules/foundation-sites/scss/foundation";
+@include foundation-everything;
+
+// Importing the base here to replace the base imported from default foundation
+@import "04_base/_base.scss";
+
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

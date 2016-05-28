@@ -1,0 +1,28 @@
+// @each $name, $path in $fonts{
+//   @include m-font-face($name, $path);
+// }
+
+/*
+@mixin open-sans(){ 
+	font-family: 'Open Sans', sans-serif; font-weight: 400;
+	.wf-open-sans-n4-loading &{
+		font-family: 'Helvetica Neue', Arial, sans-serif;
+	}
+}
+@mixin open-sans-semibold(){ 
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 600;
+
+	.wf-open-sans-n6-loading &{
+		font-family: 'Helvetica Neue', Arial, sans-serif;
+	}
+}
+@mixin slabo(){ 
+	font-family: 'Slabo 27px', serif; 
+	letter-spacing: -1px; font-weight: 400;
+
+	.wf-slabo27px-n4-loading &{
+		font-family: Georgia, "Times New Roman", Times, serif;
+	}
+}
+*/

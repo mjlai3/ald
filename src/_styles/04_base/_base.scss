@@ -1,0 +1,70 @@
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+/*::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+html{
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+body{
+	@include open-sans;
+	@include m-color('black');
+  	background-color: #ffffff;
+}
+
+h1, h2, h3, h4{
+	@include slabo;
+}
+
+h1{
+	font-size: rem-calc(34);
+}
+
+h2{
+	font-size: rem-calc(24);
+}
+
+p{
+	@include open-sans;
+}
+
+strong{
+	@include open-sans-semibold;
+}
+
+a{
+	@include m-color('blue');
+	//transition: all 0.3s ease-in-out; // Causes flickering effect on links like header
+	&:hover, &:focus{
+		@include m-color('employees-light');
+	}
+}
+
+small{
+	@include open-sans;
+	font-size: rem-calc(12);
+}
+
+header{
+	@include clearfix;
+}
+
+footer{
+	@include m-bgcolor('dark-blue')
+}
+*/
