@@ -15,7 +15,8 @@ $(() => {
 	
 	$(".stories__container").slick({
 	    autoplay: true,
-	    dots: true
+	    dots: true,
+	    centerMode: true
 	});
 
 });
