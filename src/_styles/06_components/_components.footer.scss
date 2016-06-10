@@ -17,11 +17,16 @@
 			}
 
 			&-right{
-				float: right;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				margin-right: 16px;
 			}
 
 			&__text{
 				@include m-color('white');
+				padding: 25px 0;
+				font-size: 12px;
 				&:nth-child(1n+2){
 					margin-left: 10px;
 				}
