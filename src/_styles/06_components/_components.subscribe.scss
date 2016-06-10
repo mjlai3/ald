@@ -1,24 +1,32 @@
-.media{
+.subscribe{
 	&__container{
-		@include m-bgcolor('media');
-		@include m-color('white');
+		@include m-bgcolor('subscribe');
 		text-align: center;
 	}
 
-	&__title{
+	&__checkbox{
 
+		&__container{
+
+		}
 	}
 
 	&__text{
+		@include m-color('white');
 
+		&--bold{
+			font-weight: 600;
+		}
 	}
 
-	&__social{
+	&__title{
+		@include m-color('white');
+	}
+
+	&__input{
 
 		&__container{
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
+			
 		}
 	}
 }
