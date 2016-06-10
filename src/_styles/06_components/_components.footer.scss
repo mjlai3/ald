@@ -8,6 +8,10 @@
 				margin: 0;
 				list-style: none;
 			}
+
+			&__text{
+				font-size: 13px;
+			}
 		}
 		&--dark{
 			@include m-bgcolor('footer-dark');
@@ -29,6 +33,9 @@
 				font-size: 12px;
 				&:nth-child(1n+2){
 					margin-left: 10px;
+				}
+				&:hover, &:focus{
+					@include m-color('white');
 				}
 			}
 		}
