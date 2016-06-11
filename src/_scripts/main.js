@@ -70,6 +70,9 @@ $(() => {
 	        }
 	    }
 
+	    // Uncheck All
+	    $('.filter__checkbox[value="all"]').prop('checked', false);
+
 	    // Show all items if none of the other filters are checked
 	    if(!$('.filter__checkbox[value="fitness"]').is(":checked") && !$('.filter__checkbox[value="food"]').is(":checked") && !$('.filter__checkbox[value="lifestyle"]').is(":checked")){
 	    	$('.grid-item').show();
