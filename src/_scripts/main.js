@@ -55,9 +55,39 @@ $(() => {
 		return false;
 	});
 
-	grid.multipleFilterMasonry({
-	    itemSelector: '.challenge',
-	    filtersGroupSelector:'.filters'
+	$(".filter__checkbox").change(function() {
+
+		// Show all items if All is checked
+	    if(this.checked) {
+	        if($(this).val() === 'all'){
+	        	$(".filter__checkbox").prop('checked', false);
+	        	$(this).prop('checked', true);
+	        	$('.grid-item').show();
+	        	grid.masonry();
+	        	return;
+	        }
+	    }
+
+	    // Show all items if none of the other filters are checked
+	    if(!$('.filter__checkbox[value="fitness"]').is(":checked") && !$('.filter__checkbox[value="food"]').is(":checked") && !$('.filter__checkbox[value="lifestyle"]').is(":checked")){
+	    	$('.grid-item').show();
+	    	grid.masonry();
+	    	return;
+	    }
+
+	    // Only show category checked
+	    $('.filter__checkbox').each(function(){
+	    	if($(this).is(":checked")){
+	    		$('.grid-item.' + $(this).val()).show();
+	    	}
+	    	else{
+	    		$('.grid-item.' + $(this).val()).hide();
+	    	}
+	    });
+
+	    // Finally, layout masonry again
+	    grid.masonry();
+
 	});
 
 });
