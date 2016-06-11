@@ -32,6 +32,23 @@ block content
 							div.subscribe__submit Send me daily dash
 		div.row
 			div.columns.large-12
+				.btn-toolbar.filters
+					.btn-group(data-toggle='buttons')
+						label.btn.btn-default
+							input(type='checkbox', value='Matematica')
+							|             Math
+						label.btn.btn-default
+							input(type='checkbox', value='Scienza')
+							|             Science
+						label.btn.btn-default
+							input(type='checkbox', value='Letteratura')
+							|             Literature
+					.btn-group(data-toggle='buttons')
+						label.btn.btn-default
+							input(type='checkbox', value='mine')
+							|             Mine
+		div.row
+			div.columns.large-12
 				h1 Infinite Scrolling, Demo 1
 				.grid
 					.grid-item.grid-item-2

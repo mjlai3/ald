@@ -55,4 +55,9 @@ $(() => {
 		return false;
 	});
 
+	grid.multipleFilterMasonry({
+	    itemSelector: '.challenge',
+	    filtersGroupSelector:'.filters'
+	});
+
 });
