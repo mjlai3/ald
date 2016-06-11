@@ -1,33 +1,101 @@
 .subscribe{
+
+	// {{subscribe__container}}
 	&__container{
 		@include m-bgcolor('subscribe');
 		text-align: center;
+		padding: 50px 0 55px
 	}
 
+	// {{subscribe__checkbox}}
 	&__checkbox{
 
+		// Hidden default checkboxes
+		&[type="checkbox"]{
+			display: none;
+
+			// Unchecked style
+			& + label span{
+				display:inline-block;
+			    width:19px;
+			    height:19px;
+			    margin:-1px 4px 0 0;
+			    vertical-align: middle;
+			    border: 2px solid f-color('white');
+			    cursor:pointer;
+			    border-radius: 5px;
+			}
+
+			&:checked + label span{
+				background-color: white;
+			}
+		}
+
+		// {{subscribe__checkbox__container}}
 		&__container{
+
+		}
+
+		// {{subscribe__checkbox__label}}
+		// Checkbox label so you can click the custom checkbox too
+		&__label{
+			@include m-color('white');
+		}
+
+		// {{subscribe__checkbox__span}}
+		// Custom Checkbox
+		&__span{
 
 		}
 	}
 
+	// {{subscribe__text}}
 	&__text{
 		@include m-color('white');
 
+		// {{subscribe__text--bold}}
 		&--bold{
 			font-weight: 600;
 		}
 	}
 
-	&__title{
-		@include m-color('white');
+	// {{subscribe__input}}
+	&__input{
+		padding: 15px 25px;
+		border-bottom-left-radius: 30px;
+		border-top-left-radius: 30px;
+		box-shadow: none;
+		border: 1px solid grey;
+		border-right: none;
+		font-weight: 600;
+		outline: none;
+
+		// {{subscribe__input__container}}
+		&__container{
+			display: flex;
+			justify-content: center;
+		}
 	}
 
-	&__input{
+	// {{subscribe__submit}}
+	&__submit{
+		@include m-color('white');
+		@include m-bgcolor('subscribe-btn');
+		padding: 15px;
+		font-weight: 600;
+		border-bottom-right-radius: 30px;
+		border-top-right-radius: 30px;
+		border: 1px solid grey;
+		cursor: pointer;
 
-		&__container{
-			
+		&:hover, &:focus{
+
 		}
+	}
+
+	// {{subscribe__title}}
+	&__title{
+		@include m-color('white');
 	}
 }
 

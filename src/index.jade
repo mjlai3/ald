@@ -13,9 +13,20 @@ block content
 					div.subscribe__title Subscribe to our newsletter
 					div.subscribe__text Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet direct to your inbox, for busy people.
 					div.subscribe__text.subscribe__text--bold I'm interested in
-					div.subscribe__checkbox__container
 					form(action="/", method="post")
+						div.subscribe__checkbox__container
+							input.subscribe__checkbox#subscribe-fitness(type='checkbox', name='subscribe-checkbox')
+							label.subscribe__checkbox__label(for='subscribe-fitness')
+								span.subscribe__checkbox__span
+								| Fitness
+							input.subscribe__checkbox#subscribe-lifestyle(type='checkbox', name='subscribe-checkbox')
+							label.subscribe__checkbox__label(for='subscribe-lifestyle')
+								span.subscribe__checkbox__span
+								| Lifestyle
+							input.subscribe__checkbox#subscribe-food(type='checkbox', name='subscribe-checkbox')
+							label.subscribe__checkbox__label(for='subscribe-food')
+								span.subscribe__checkbox__span
+								| Food
 						div.subscribe__input__container
-							input.subscribe__input
-							button.subscribe__input(type="submit")
-
+							input.subscribe__input(placeholder="Enter your email...")
+							div.subscribe__submit Send me daily dash
