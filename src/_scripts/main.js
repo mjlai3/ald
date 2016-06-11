@@ -21,11 +21,9 @@ $(() => {
 
 	var grid = $('.grid');
 
-	grid.masonry({
-	    itemSelector: '.grid-item',
-	    columnWidth: '.grid-sizer',
-	    gutter: '.gutter-sizer',
-	    percentPosition: true
+	$('.grid').packery({
+	  itemSelector: '.grid-item',
+	  gutter: '.gutter-sizer'
 	});
 
 	grid.infinitescroll({
@@ -47,7 +45,7 @@ $(() => {
 		var elts = $(new_elts).css('opacity', 0);
 
 		elts.animate({opacity: 1});
-		grid.masonry('appended', elts);
+		grid.packery('appended', elts);
 
 		$( ".filter__checkbox" ).trigger( "change" );
 	});
@@ -67,7 +65,7 @@ $(() => {
 	        	$(".filter__checkbox").prop('checked', false);
 	        	$(this).prop('checked', true);
 	        	$('.grid-item').show();
-	        	grid.masonry();
+	        	grid.packery();
 	        	return;
 	        }
 	    }
@@ -78,7 +76,7 @@ $(() => {
 	    // Show all items if none of the other filters are checked
 	    if(!$('.filter__checkbox[value="fitness"]').is(":checked") && !$('.filter__checkbox[value="food"]').is(":checked") && !$('.filter__checkbox[value="lifestyle"]').is(":checked")){
 	    	$('.grid-item').show();
-	    	grid.masonry();
+	    	grid.packery();
 	    	return;
 	    }
 
@@ -93,7 +91,7 @@ $(() => {
 	    });
 
 	    // Finally, layout masonry again
-	    grid.masonry();
+	    grid.packery();
 
 	});
 
