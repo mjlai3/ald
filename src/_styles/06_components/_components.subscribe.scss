@@ -137,3 +137,28 @@ $c2: #e84a69;
 .slick-slide:nth-child(odd) {
      background: $c2;
 }
+
+.grid {
+	margin: 0 2em 2em;
+	padding: 1em;
+	background-color: #FFFFFF;
+}
+
+.grid-item {
+	padding: 15px;
+	width: 200px;
+}
+
+.grid-item-2 {
+	width: 400px;
+}
+
+.grid-item-3 {
+	width: 600px;
+}
+
+.grid-item p {
+	margin: 0;
+	padding: 0.5em;
+	background-color: #F0F0F0;
+}
