@@ -46,6 +46,8 @@ $(() => {
 
 		elts.animate({opacity: 1});
 		grid.masonry('appended', elts);
+
+		$( ".filter__checkbox" ).trigger( "change" );
 	});
 
 	$(window).unbind('.infscr');
