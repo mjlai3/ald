@@ -152,9 +152,11 @@ $c2: #e84a69;
 
 /* ---- grid-item ---- */
 
-.grid-sizer,
+.grid-sizer{
+	width: 0.8620689655172425%;
+}
 .grid-item {
-  width: 48.27586206896552%;
+  width: 31.03448275862069%;
   margin-bottom: 3.44827586206897%;
 }
 
@@ -173,4 +175,4 @@ $c2: #e84a69;
 
 .grid-item-2 { width: 100%; }
 .grid-item-3 { width: 65.5171724138%; }
-.grid-item-4 { width: 31.03448275862069%; }
+.grid-item-4 { width: 48.27586206896552%; }
