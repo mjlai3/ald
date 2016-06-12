@@ -165,12 +165,10 @@ $c2: #e84a69;
 }
 
 .grid-item {
+  @include m-bgcolor('article-grey');
   height: 480px;
   float: left;
-  background: #D26;
   border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
 }
 
 .grid-item-2 { width: 100%; }
