@@ -1,0 +1,38 @@
+$c1: #3a8999;
+$c2: #e84a69;
+
+.stories__container {
+    width: 100%;
+}
+
+.slick-slide {
+    background: $c1;
+    color: white;
+    padding: 40px 0;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+}
+.slick-prev {
+    left: 25px;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 25px;
+}
+.slick-prev:before, 
+.slick-next:before {
+    color: black;    
+}
+.slick-next:before{
+
+}
+
+.slick-dots {
+    bottom: -30px;
+}
+
+.slick-slide:nth-child(odd) {
+    background: $c2;
+}

@@ -47,10 +47,9 @@ block content
 							| ALL
 		div.row
 			div.columns.large-12
-				h1 Infinite Scrolling, Demo 1
-				.grid
-					.grid-sizer
-					.gutter-sizer
+				div.grid
+					div.grid-sizer
+					div.gutter-sizer
 					each val in site.data.articles
 						- var grid = (val.grid === "undefined" ? '' : val.grid)
 						div.grid-item(class="#{grid} #{val.type} #{val.category}")
