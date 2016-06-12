@@ -1,0 +1,25 @@
+[
+	{
+		"grid":"grid-item-2",
+		"type":"article--full",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"favicon.ico",
+		"title":"Practising everyday mindfulness",
+		"text": [
+			{
+				"paragraph": "Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc."
+			},
+			{
+				"paragraph": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+			}
+		]
+	},
+	{
+		"type":"article--small--full",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"favicon.ico",
+		"title":"Exercise tip: Take the dogs out"
+	}
+]

@@ -51,25 +51,35 @@ block content
 				.grid
 					.grid-sizer
 					.gutter-sizer
-					.grid-item.grid-item-2.article--full.lifestyle
-						a.article__link(href="#")
-							div.article__img
-								div.article__tag__container--outer
-									div.article__tag__container--inner
-										img.article__icon(src="favicon.ico")
-										div.article__tag LIFESTYLE
-							div.article__text__container--outer
-								div.article__text__container--inner
-									h2.article__title Practising everyday mindfulness
-									p.article__text Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc.
-									p.article__text Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-					.grid-item.article--small--full.fitness
-						a.article__link(href="#")
-							div.article__img
-								div.article__tag__container--outer
-									div.article__tag__container--inner
-										img.article__icon(src="favicon.ico")
-										div.article__tag FITNESS
+					each val in site.data.articles
+						if val.grid
+							div.grid-item(class="#{val.grid} #{val.type} #{val.category}")
+								a.article__link(href="#")
+									div.article__img
+										div.article__tag__container--outer
+											div.article__tag__container--inner
+												img.article__icon(src="#{val.icon}")
+												div.article__tag #{val.tag}
+									div.article__text__container--outer
+										div.article__text__container--inner
+											h2.article__title #{val.title}
+											if val.text
+												each paragraph in val.text
+													p.article__text #{paragraph.paragraph}
+						else
+							div.grid-item(class="#{val.type} #{val.category}")
+								a.article__link(href="#")
+									div.article__img
+										div.article__tag__container--outer
+											div.article__tag__container--inner
+												img.article__icon(src="#{val.icon}")
+												div.article__tag #{val.tag}
+									div.article__text__container--outer
+										div.article__text__container--inner
+											h2.article__title #{val.title}
+											if val.text
+												each paragraph in val.text
+													p.article__text #{paragraph.paragraph}
 					.grid-item.lifestyle
 						p
 							| lifestyle
