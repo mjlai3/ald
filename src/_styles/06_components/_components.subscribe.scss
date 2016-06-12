@@ -166,9 +166,12 @@ $c2: #e84a69;
 
 .grid-item {
   @include m-bgcolor('article-grey');
-  height: 480px;
   float: left;
   border: 2px solid #333;
+
+  @include mq(large){
+	  height: 480px;
+  }
 }
 
 .grid-item-2 { width: 100%; }

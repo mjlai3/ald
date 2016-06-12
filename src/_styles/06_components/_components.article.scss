@@ -12,6 +12,7 @@
 				height: 100%;
 				width: 100%;
 				transition: all 0.3s;
+				background-color: rgba(219, 154, 196, 0.8);
 			}
 			.article__icon{
 				display: inline;
@@ -59,9 +60,13 @@
 	//{{article__img}}
 	&__img{
 		background-color: #58A2D1;
-		height: 100%;
-		width: 65.5171724138%;
-		float: left;
+		width: 100%;
+
+		@include mq(large){
+			width: 65.5171724138%;
+			float: left;
+			height: 100%;
+		}
 	}
 
 	//{{article__text}}
@@ -73,12 +78,16 @@
 
 			//{{article__text__container--outer}}
 			&--outer{
-				width: 34.48275862068966%;
-				float: right;
+				width: 100%;
 				height: 100%;
 				display: flex;
 				align-items: flex-end;
 				padding: 3.44827586206897%;
+
+				@include mq(large){
+					width: 34.48275862068966%;
+					float: right;
+				}
 			}
 
 			//{{article__text__container--inner}}
