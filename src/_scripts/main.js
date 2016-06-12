@@ -50,9 +50,15 @@ $(() => {
 
 	// Function called once the elements are retrieved
 	function(new_elts) {
-		var elts = $(new_elts).css('opacity', 0);
 
-		elts.animate({opacity: 1});
+		// This gives a fade in effect, but it makes masonry jump flicker
+		// var elts = $(new_elts).css('opacity', 0);
+		// elts.animate({opacity: 1});
+
+		// Smoother
+		var elts = $(new_elts);
+		elts;
+
 		grid.masonry('appended', elts);
 
 		$( ".filter__checkbox" ).trigger( "change" );
