@@ -134,5 +134,57 @@
 				"paragraph": "Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis."
 			}
 		]
+	},
+	{
+		"type":"article--small--full",
+		"category":"food",
+		"tag":"FOOD",
+		"icon":"favicon.ico",
+		"title":"Recipe: Cauliflower-Parama",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"image": "favicon.ico",
+				"name": "SUZANNE HEYN"
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"favicon.ico",
+		"title":"All the rage with colouring books",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"image": "favicon.ico",
+				"name": "EMILY BARKER"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc."
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"favicon.ico",
+		"title":"Using kettlebells can help with core training",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"image": "favicon.ico",
+				"name": "TODD McCULLOUGH"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
+			}
+		]
 	}
 ]
