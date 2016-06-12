@@ -6,6 +6,7 @@
 		"tag":"LIFESTYLE",
 		"icon":"favicon.ico",
 		"title":"Practising everyday mindfulness",
+		"background":"/images/placeholder.jpg",
 		"text": [
 			{
 				"paragraph": "Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc."
@@ -21,10 +22,43 @@
 		"tag":"FITNESS",
 		"icon":"favicon.ico",
 		"title":"Exercise tip: Take the dogs out",
+		"background":"/images/placeholder.jpg",
 		"author": [
 			{
 				"image": "favicon.ico",
 				"name": "TODD McCULLOUGH"
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"favicon.ico",
+		"title":"How to deal with uncertainty",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"image": "favicon.ico",
+				"name": "EMILY BARKER"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"food",
+		"tag":"FOOD",
+		"icon":"favicon.ico",
+		"title":"For the love of beter coffee",
+		"background":"/images/placeholder.jpg",
+		"text": [
+			{
+				"paragraph": "Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit."
 			}
 		]
 	}

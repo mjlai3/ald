@@ -9,6 +9,7 @@
 
 		// Hover tag expand full and reduce opacity
 		&:hover{
+			text-decoration: none;
 			.article__tag__container--outer{
 				height: 100%;
 				width: 100%;
@@ -51,10 +52,10 @@
 				font-size: 14px;
 				font-weight: 600;
 				display: flex;
-				height: 7%;
 				justify-content: center;
 				align-items: center;
 				transition: all 0.3s;
+				height: 30px;
 
 				.article--full &{
 					width: 11.842117728%;
@@ -63,6 +64,11 @@
 				.article--small--full &{
 					width: 25%;
 					position: absolute;
+					z-index: 1;
+				}
+
+				.article--small--half &{
+					width: 25%;
 					z-index: 1;
 				}
 
@@ -88,26 +94,27 @@
 
 	//{{article__img}}
 	&__img{
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 
 		.article--full &{
-			background-color: #58A2D1;
-			width: 100%;
 
 			@include mq(large){
 				width: 65.5171724138%;
+				height: 100%;
 				float: left;
 			}
 		}
 
 		.article--small--full &{	
-			background-color: #58A2D1;
 			position: absolute;
-			width: 100%;
 			height: 100%;
 		}
 
-		@include mq(large){
-			height: 100%;
+		.article--small--half &{
+			height: 45.83333333333333%;
 		}
 	}
 
@@ -118,6 +125,9 @@
 		}
 		.article--small--full &{
 			@include m-color('white');
+		}
+		.article--small--half &{
+			@include m-color('black');
 		}
 
 		//{{article__text__container}}
@@ -150,6 +160,12 @@
 						position: absolute;
 					}
 				}
+
+				.article--small--half &{
+					width: 100%;
+					height: 100%;
+					padding: 3.44827586206897%;
+				}
 			}
 
 			//{{article__text__container--inner}}
@@ -166,6 +182,9 @@
 		}
 		.article--small--full &{
 			@include m-color('white');
+		}
+		.article--small--half &{
+			@include m-color('black');
 		}
 	}
 
@@ -189,7 +208,15 @@
 
 		//{{article__author__name}}
 		&__name{
-			@include m-color('white');
+			.article--full &{
+				@include m-color('black');
+			}
+			.article--small--full &{
+				@include m-color('white');
+			}
+			.article--small--half &{
+				@include m-color('black');
+			}
 		}
 	}
 }
