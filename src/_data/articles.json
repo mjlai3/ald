@@ -20,6 +20,12 @@
 		"category":"fitness",
 		"tag":"FITNESS",
 		"icon":"favicon.ico",
-		"title":"Exercise tip: Take the dogs out"
+		"title":"Exercise tip: Take the dogs out",
+		"author": [
+			{
+				"image": "favicon.ico",
+				"name": "TODD McCULLOUGH"
+			}
+		]
 	}
 ]

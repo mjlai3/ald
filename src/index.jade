@@ -63,6 +63,10 @@ block content
 									div.article__text__container--outer
 										div.article__text__container--inner
 											h2.article__title #{val.title}
+											if val.author
+												div.article__author__container
+													div.article__author__img(style="background-image:url('#{val.author[0].image}')")
+													div.article__author__name #{val.author[0].fullname}
 											if val.text
 												each paragraph in val.text
 													p.article__text #{paragraph.paragraph}
@@ -77,6 +81,10 @@ block content
 									div.article__text__container--outer
 										div.article__text__container--inner
 											h2.article__title #{val.title}
+											if val.author
+												div.article__author__container
+													div.article__author__img(style="background-image:url('#{val.author[0].image}')")
+													div.article__author__name #{val.author[0].name}
 											if val.text
 												each paragraph in val.text
 													p.article__text #{paragraph.paragraph}

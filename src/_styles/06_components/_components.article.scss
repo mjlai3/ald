@@ -168,4 +168,28 @@
 			@include m-color('white');
 		}
 	}
+
+	//{{article__author}}
+	&__author{
+
+		//{{article__author__container}}
+		&__container{
+			display: flex;
+			align-items: center;
+		}
+
+		//{{article__author__img}}
+		&__img{
+			height: 30px;
+			width: 30px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		//{{article__author__name}}
+		&__name{
+			@include m-color('white');
+		}
+	}
 }
