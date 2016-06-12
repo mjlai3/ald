@@ -61,5 +61,78 @@
 				"paragraph": "Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit."
 			}
 		]
+	},
+	{
+		"grid":"grid-item-3",
+		"type":"article--xmedium",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"favicon.ico",
+		"title":"Organise a country getaway in 10 minutes",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"image": "favicon.ico",
+				"name": "OSHAY KEY"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci."
+			}
+		]
+	},
+	{
+		"type":"article--small--full",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"favicon.ico",
+		"title":"We're all busy, but don't neglect your girlfriends",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"image": "favicon.ico",
+				"name": "EVA HERSHAW"
+			}
+		]
+	},
+	{
+		"grid":"grid-item-4",
+		"type":"article--medium",
+		"category":"food",
+		"tag":"FOOD",
+		"icon":"favicon.ico",
+		"title":"Recipe: Breakfast Burrito",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"image": "favicon.ico",
+				"name": "SUZANNE HEYN"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa enim!"
+			}
+		]
+	},
+	{
+		"grid":"grid-item-4",
+		"type":"article--medium",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"favicon.ico",
+		"title":"Powernaps; who has time for it?",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"name": "FIONA BAKER"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis."
+			}
+		]
 	}
 ]

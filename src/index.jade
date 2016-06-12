@@ -65,8 +65,11 @@ block content
 											h2.article__title #{val.title}
 											if val.author
 												div.article__author__container
-													div.article__author__img(style="background-image:url('#{val.author[0].image}')")
-													div.article__author__name #{val.author[0].fullname}
+													if val.author[0].image
+														div.article__author__img(style="background-image:url('#{val.author[0].image}')")
+														div.article__author__name #{val.author[0].name}
+													else
+														div.article__author__name WITH #{val.author[0].name}
 											if val.text
 												each paragraph in val.text
 													p.article__text #{paragraph.paragraph}
@@ -83,47 +86,14 @@ block content
 											h2.article__title #{val.title}
 											if val.author
 												div.article__author__container
-													div.article__author__img(style="background-image:url('#{val.author[0].image}')")
-													div.article__author__name #{val.author[0].name}
+													if val.author[0].name
+														div.article__author__img(style="background-image:url('#{val.author[0].image}')")
+														div.article__author__name #{val.author[0].name}
+													else
+														div.article__author__name WITH #{val.author[0].name}
 											if val.text
 												each paragraph in val.text
 													p.article__text #{paragraph.paragraph}
-					.grid-item.grid-item-3.lifestyle
-						p
-							| lifestyle
-					.grid-item.lifestyle
-						p
-							| lifestyle
-					.grid-item.grid-item-4.lifestyle
-						p
-							| lifestyle
-					.grid-item.grid-item-4.lifestyle
-						p
-							| lifestyle
-					.grid-item.grid-item-3.food
-						p
-							| food
-					.grid-item.grid-item-3.food
-						p
-							| food
-					.grid-item.grid-item-3.food
-						p
-							| food
-					.grid-item.grid-item-3.food
-						p
-							| food
-					.grid-item.grid-item-3.food
-						p
-							| food
-					.grid-item.food
-						p
-							| food
-					.grid-item.food
-						p
-							| food
-					.grid-item.food
-						p
-							| food
 				nav#pagination
 					p
 						a(href='page-2.html') Page 2
