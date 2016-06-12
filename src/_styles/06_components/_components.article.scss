@@ -1,0 +1,60 @@
+.article{
+	
+	//{{article__link}}
+	&__link{
+		display: block;
+		position: relative;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	//{{article__tag}}
+	&__tag{
+		@include m-color('white');
+		position: absolute;
+		padding: 5px;
+		font-size: 14px;
+		font-weight: 600;
+
+		.lifestyle &{
+			@include m-bgcolor('lifestyle');
+		}
+	}
+
+	//{{article__img}}
+	&__img{
+		background-color: #58A2D1;
+		height: 100%;
+		width: 65.5171724138%;
+		float: left;
+	}
+
+	//{{article__text}}
+	&__text{
+		@include m-color('white');
+
+		//{{article__text__container}}
+		&__container{
+
+			//{{article__text__container--outer}}
+			&--outer{
+				width: 34.48275862068966%;
+				float: right;
+				height: 100%;
+				display: flex;
+				align-items: flex-end;
+				padding: 3.44827586206897%;
+			}
+
+			//{{article__text__container--inner}}
+			&--inner{
+
+			}
+		}
+	}
+
+	//{{article__title}}
+	&__title{
+		@include m-color('white');
+	}
+}
