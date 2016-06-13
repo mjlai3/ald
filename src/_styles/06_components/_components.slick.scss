@@ -1,12 +1,11 @@
-$c1: #3a8999;
-$c2: #e84a69;
-
 .slick__container {
     // width: 100%;
+    padding: 35px 0;
 
     &__frame{
     	height: 700px;
         width: 1160px;
+        outline: none;
     }
 }
 
@@ -15,8 +14,7 @@ $c2: #e84a69;
 }
 
 .slick-slide {
-    background: $c1;
-    color: white;
+    @include m-color('white');
     //padding: 40px 0;
     //text-align: center;
 }
@@ -37,9 +35,18 @@ $c2: #e84a69;
 }
 
 .slick-dots {
-    bottom: -30px;
+    margin-top: 30px;
+    position: static;
 }
 
-.slick-slide:nth-child(odd) {
-    background: $c2;
+// All dots
+.slick-dots li button:before{
+    opacity: 1;
+    @include m-color('slick-dot-inactive');
+}
+
+// Active dot
+.slick-dots li.slick-active button:before{
+    opacity: 1;
+    @include m-color('slick-dot-active');
 }

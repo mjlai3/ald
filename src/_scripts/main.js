@@ -22,7 +22,8 @@ $(() => {
 		dots: true,
 		centerMode: true,
 		focusOnSelect: true,
-		variableWidth: true
+		variableWidth: true,
+		appendDots: '.slick__container'
 	});
 
 	var grid = $('.grid');

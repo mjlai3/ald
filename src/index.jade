@@ -2,7 +2,7 @@ extends _layouts/base
 
 block content
 	div.container
-		div.slick__container
+		div.slick__container(style="background-image: url('/images/placeholder2.jpg');")
 			div.slick__container__frame
 				each val in site.data.articlesslick
 					- var grid = (val.grid === "undefined" ? '' : val.grid)
