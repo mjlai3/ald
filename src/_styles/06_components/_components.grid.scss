@@ -26,7 +26,6 @@
 .grid-item {
 	@include m-bgcolor('article-grey');
 	float: left;
-	border: 2px solid #333;
 
 	@include mq(large){
 		height: 480px;
