@@ -256,6 +256,10 @@
 		.article--small--half &{
 			@include m-color('black');
 		}
+
+		.article--small--full.grid-item-6 &{
+			font-size: 16px;
+		}
 	}
 
 	//{{article__author}}
