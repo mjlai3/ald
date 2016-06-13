@@ -13,8 +13,8 @@ import Footer from '../_modules/footer/footer';
 
 $(() => {
 	
-	$(".stories__container").slick({
-	    autoplay: true,
+	$(".slick__container").slick({
+	    //autoplay: true,
 	    dots: true,
 	    centerMode: true
 	});

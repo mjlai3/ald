@@ -1,16 +1,22 @@
 $c1: #3a8999;
 $c2: #e84a69;
 
-.stories__container {
-    width: 100%;
+.slick__container {
+    // width: 100%;
+
+    &__frame{
+    	height: 750px;
+    }
+}
+
+.slick-slide img {
+    display: none;
 }
 
 .slick-slide {
     background: $c1;
     color: white;
-    padding: 40px 0;
-    font-size: 30px;
-    font-family: "Arial", "Helvetica";
+    //padding: 40px 0;
     text-align: center;
 }
 .slick-prev {
