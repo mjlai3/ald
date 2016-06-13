@@ -26,14 +26,22 @@
 .slick-next {
     right: 25px;
 }
-.slick-prev:before, 
-.slick-next:before {
-    color: black;    
+.slick-prev:before, .slick-next:before {
+    font-size: 70px;
+    opacity: 0.9;
 }
+
+// Left Arrow
 .slick-next:before{
-
+    margin-left: -685px;
 }
 
+// Right Arrow
+.slick-prev:before {
+    margin-left: 315px;
+}
+
+// Container that holds all dots
 .slick-dots {
     margin-top: 30px;
     position: static;
