@@ -39,14 +39,27 @@
     position: static;
 }
 
+// The container for each dot
+.slick-dots li{
+    margin: 0 45px;
+}
+
 // All dots
 .slick-dots li button:before{
     opacity: 1;
     @include m-color('slick-dot-inactive');
+    @include m-bgcolor('slick-dot-inactive');
+    height: 10px;
+    width: 60px;
+    border-radius: 10px;
+    content: ''; // replacing • from default slick
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
 }
 
 // Active dot
 .slick-dots li.slick-active button:before{
     opacity: 1;
     @include m-color('slick-dot-active');
+    @include m-bgcolor('slick-dot-active');
 }
