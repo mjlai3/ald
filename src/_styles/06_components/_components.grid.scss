@@ -33,8 +33,8 @@
 }
 
 .grid-item--slick {
-	@include m-bgcolor('article-grey');
 	float: left;
+	padding: 5px;
 }
 
 // Masonry Articles
@@ -43,6 +43,6 @@
 .grid-item-4 { width: 48.27586206896552%; }
 
 // Slick Articles
-.grid-item-5 { width: 66.66666666666666667%; height: 54.666666666666666667%}
-.grid-item-6 { width: 16.666666666666666665%; height: 17.333333333333333333333333333333%}
-.grid-item-7 { width: 33.33333333333333333%; height: 37.333333333333333333666666666667%}
+.grid-item-5 { width: 66.66666666666666667%; height: 60%; }
+.grid-item-6 { width: 16.666666666666666665%; height: 20%; }
+.grid-item-7 { width: 33.33333333333333333%; height: 40%; }

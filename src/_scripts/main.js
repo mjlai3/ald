@@ -15,8 +15,14 @@ $(() => {
 	
 	$(".slick__container").slick({
 	    //autoplay: true,
-	    dots: true,
-	    centerMode: true
+	    slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		infinite: true,
+		dots: true,
+		centerMode: true,
+		focusOnSelect: true,
+		variableWidth: true
 	});
 
 	var grid = $('.grid');
