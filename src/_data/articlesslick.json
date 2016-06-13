@@ -54,5 +54,61 @@
 				"name": "EMILY BARKER"
 			}
 		]
+	},
+	{
+		"grid":"grid-item-6",
+		"type":"article--small--full",
+		"category":"food",
+		"tag":"FOOD",
+		"icon":"favicon.ico",
+		"title":"Recipe: Strawberry and blueberry cake",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"name": "SUZANNE HEYN"
+			}
+		]
+	},
+	{
+		"grid":"grid-item-7",
+		"type":"article--small--full",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"favicon.ico",
+		"title":"You'll never be \"ready\", so stop waiting",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"name": "EMILY BARKER"
+			}
+		]
+	},
+	{
+		"grid":"grid-item-7",
+		"type":"article--small--full",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"favicon.ico",
+		"title":"You'll never be \"ready\", so stop waiting",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"name": "EMILY BARKER"
+			}
+		]
+	},
+	{
+		"grid":"grid-item-6",
+		"type":"article--small--full",
+		"category":"food",
+		"tag":"FOOD",
+		"icon":"favicon.ico",
+		"title":"Recipe: Strawberry and blueberry cake",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"name": "SUZANNE HEYN"
+			}
+		]
 	}
 ]
