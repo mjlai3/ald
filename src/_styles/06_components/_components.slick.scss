@@ -4,8 +4,12 @@
 
     &__frame{
     	height: 700px;
-        width: 1160px;
+        width: 100vw;
         outline: none;
+
+        @include mq(large){
+            width: 1160px;
+        }
     }
 }
 
