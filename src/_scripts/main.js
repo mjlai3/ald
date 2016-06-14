@@ -13,7 +13,7 @@ import Footer from '../_modules/footer/footer';
 
 $(() => {
 	
-	$(".slick__container").slick({
+	$(".slick__container--index").slick({
 	    //autoplay: true,
 	    slidesToShow: 1,
 		slidesToScroll: 1,
@@ -23,7 +23,15 @@ $(() => {
 		centerMode: true,
 		focusOnSelect: true,
 		variableWidth: true,
-		appendDots: '.slick__container'
+		appendDots: '.slick__container--index'
+	});
+
+	$(".slick__container--standard").slick({
+	    slidesToShow: 3,
+		slidesToScroll: 1,
+		centerMode: true,
+		variableWidth: true,
+		focusOnSelect: true
 	});
 
 	var grid = $('.grid');

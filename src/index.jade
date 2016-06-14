@@ -2,8 +2,8 @@ extends _layouts/base
 
 block content
 	div.container
-		div.slick__container(style="background-image: url('/images/placeholder2.jpg');")
-			div.slick__container__frame
+		div.slick__container--index(style="background-image: url('/images/placeholder2.jpg');")
+			div.slick__container--index__frame
 				each val in site.data.articlesslick
 					- var grid = (val.grid === "undefined" ? '' : val.grid)
 					div.grid-item--slick(class="#{grid} #{val.type} #{val.category}")
@@ -26,9 +26,9 @@ block content
 									if val.text
 										each paragraph in val.text
 											p.article__text #{paragraph.paragraph}
-			div.slick__container__frame 2
-			div.slick__container__frame 3
-			div.slick__container__frame 4
+			div.slick__container--index__frame 2
+			div.slick__container--index__frame 3
+			div.slick__container--index__frame 4
 		div.row
 			div.columns.large-12
 				.asadasdadsljkhasd

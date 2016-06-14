@@ -1,0 +1,21 @@
+[
+	{
+		"type":"article--small--half",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"favicon.ico",
+		"title":"How to deal with uncertainty",
+		"background":"/images/placeholder.jpg",
+		"author": [
+			{
+				"image": "favicon.ico",
+				"name": "EMILY BARKER"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
+			}
+		]
+	}
+]

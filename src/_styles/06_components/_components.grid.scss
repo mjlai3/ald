@@ -37,6 +37,14 @@
 	padding: 5px;
 }
 
+.grid-item--slick-standard {
+	@include m-bgcolor('article-grey');
+	@include mq(large){
+		height: 480px;
+		width: 31.03448275862069%;
+	}
+}
+
 // Masonry Articles
 .grid-item-2 { width: 100%; }
 .grid-item-3 { width: 65.5171724138%; }
