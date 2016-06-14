@@ -1,3 +1,5 @@
+$jointhediscussionheight: 40px;
+
 .author{
 
 	&__container{
@@ -44,8 +46,8 @@
 				@include m-color('white');
 				display: flex;
 				align-items: center;
-				margin-bottom: -20px;
-				height: 40px;
+				margin-bottom: - $jointhediscussionheight / 2;
+				height: $jointhediscussionheight;
 				padding: 0 20px;
 				border-radius: 30px;
 			}
