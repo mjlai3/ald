@@ -1,0 +1,15 @@
+.breadcrumb{
+
+	&__container{
+
+	}
+
+	&__list{
+		list-style-type: none;
+
+		&__enclosure{
+			display: inline;
+			font-size: 12px;
+		}
+	}
+}
