@@ -56,5 +56,10 @@
 
 	&__comments{
 		border-left: 1px solid grey;
+
+		&--view{
+			display: block;
+			text-align: center;
+		}
 	}
 }

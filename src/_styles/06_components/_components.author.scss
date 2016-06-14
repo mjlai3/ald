@@ -2,6 +2,7 @@ $jointhediscussionheight: 40px;
 
 .author{
 
+	// {{author__container}}
 	&__container{
 		position: relative;
 		display: flex;
@@ -9,10 +10,13 @@ $jointhediscussionheight: 40px;
 		border-top: 1px solid grey;
 		border-bottom: 1px solid grey;
 		padding: 30px 0;
+		margin: 40px 0;
 	}
 
+	// {{author__img}}
 	&__img{
 
+		// {{author__img__container}}
 		&__container{
 			height: 150px;
 			width: 150px;
@@ -22,10 +26,13 @@ $jointhediscussionheight: 40px;
 		}
 	}
 
+	// {{author__join}}
 	&__join{
 		
+		// {{author__join__container}}
 		&__container{
 
+			// {{author__join__container--outer}}
 			&--outer{
 				position: absolute;
 				left: 0;
@@ -34,6 +41,7 @@ $jointhediscussionheight: 40px;
 				bottom: 0;
 			}
 
+			// {{author__join__container--center}}
 			&--center{
 				display: flex;
 				align-items: flex-end;
@@ -41,6 +49,7 @@ $jointhediscussionheight: 40px;
 				height: 100%;
 			}
 
+			// {{author__join__container--inner}}
 			&--inner{
 				@include m-bgcolor('food');
 				@include m-color('white');
@@ -53,6 +62,7 @@ $jointhediscussionheight: 40px;
 			}
 		}
 
+		// {{author__join__text}}
 		&__text{
 
 		}
