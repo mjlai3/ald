@@ -1,0 +1,32 @@
+.breadcrumb{
+
+	// {{breadcrumb__container}}
+	&__container{
+
+	}
+
+	// {{breadcrumb__container__list}}
+	&__list{
+		list-style-type: none;
+
+		// {{breadcrumb__container__list__enclosure}}
+		&__enclosure{
+			display: inline;
+			font-size: 12px;
+
+			// {{breadcrumb__container__list__enclosure__link}}
+			&__link{
+				@include m-color('black');
+
+				&:hover, &:focus{
+					@include m-color('black');
+				}
+			}
+
+			// {{breadcrumb__container__list__enclosure__divider}}
+			&--divider{
+				
+			}
+		}
+	}
+}
