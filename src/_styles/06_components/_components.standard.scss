@@ -20,6 +20,19 @@
 		}
 	}
 
+	&__content{
+
+		figure{
+			max-width: 50%;
+			margin: 0 20px 0 0;
+			float: left;
+		}
+
+		figcaption{
+			font-size: 12px;
+		}
+	}
+
 	&__title{
 
 		&__container{
