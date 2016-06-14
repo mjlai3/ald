@@ -1,0 +1,16 @@
+.tag{
+
+	&__container{
+
+	}
+
+	&__list{
+		list-style-type: none;
+		margin: 0;
+
+		&__enclosure{
+			display: inline;
+			margin-right: 20px;
+		}
+	}
+}

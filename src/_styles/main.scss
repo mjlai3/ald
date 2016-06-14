@@ -13,6 +13,7 @@
 @import "02_tools/_tools.mixin.mq.scss";
 @import "02_tools/_tools.mixin.zindex.scss";
 @import "03_generic/_generic.fonts.scss";
+@import "06_components/_components.author.scss";
 @import "06_components/_components.article.scss";
 @import "06_components/_components.breadcrumb.scss";
 @import "06_components/_components.column.scss";
@@ -22,6 +23,7 @@
 @import "06_components/_components.slick.scss";
 @import "06_components/_components.standard.scss";
 @import "06_components/_components.subscribe.scss";
+@import "06_components/_components.tag.scss";
 
 // Import Foundation Module
 @import "../../node_modules/foundation-sites/scss/foundation";

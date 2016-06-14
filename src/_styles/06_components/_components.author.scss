@@ -1,0 +1,58 @@
+.author{
+
+	&__container{
+		position: relative;
+		display: flex;
+		align-items: flex-start;
+		border-top: 1px solid grey;
+		border-bottom: 1px solid grey;
+		padding: 30px 0;
+	}
+
+	&__img{
+
+		&__container{
+			height: 150px;
+			width: 150px;
+			border: 1px solid grey;
+			border-radius: 50%;
+			flex-shrink: 0;
+		}
+	}
+
+	&__join{
+		
+		&__container{
+
+			&--outer{
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+			}
+
+			&--center{
+				display: flex;
+				align-items: flex-end;
+				justify-content: center;
+				height: 100%;
+			}
+
+			&--inner{
+				@include m-bgcolor('food');
+				@include m-color('white');
+				display: flex;
+				align-items: center;
+				margin-bottom: -20px;
+				height: 40px;
+				padding: 0 20px;
+				border-radius: 30px;
+			}
+		}
+
+		&__text{
+
+		}
+	}
+}
