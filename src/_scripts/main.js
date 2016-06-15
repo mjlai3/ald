@@ -27,7 +27,7 @@ $(() => {
 	});
 
 	$(".slick__container--standard").slick({
-	    slidesToShow: 3,
+	    slidesToShow: 1,
 		slidesToScroll: 1,
 		centerMode: true,
 		variableWidth: true,

@@ -5,7 +5,7 @@
         padding: 35px 0;
 
         &__frame{
-        	height: 700px;
+            height: 700px;
             width: 100vw;
             outline: none;
 
@@ -75,6 +75,31 @@
             opacity: 1;
             @include m-color('slick-dot-active');
             @include m-bgcolor('slick-dot-active');
+        }
+    }
+
+    &--standard{
+        // width: 100%;
+        padding: 35px 0;
+
+        &__frame{
+        	height: 700px;
+            width: 100vw;
+            outline: none;
+
+            @include mq(large){
+                width: 31.03448275862069%;
+            }
+        }
+
+        .slick-slide img {
+            display: none;
+        }
+
+        .slick-slide {
+            //@include m-color('white');
+            //padding: 40px 0;
+            //text-align: center;
         }
     }
 }
