@@ -27,7 +27,10 @@
 			}
 
 			&:checked + label span{
-				background-color: white;
+				background-image: url('/images/checkbox-tick.png');
+				background-size: 120%;
+				background-position: center;
+				background-repeat: no-repeat;
 			}
 		}
 
@@ -40,6 +43,7 @@
 		// Checkbox label so you can click the custom checkbox too
 		&__label{
 			@include m-color('white');
+			font-size: 21px;
 		}
 
 		// {{subscribe__checkbox__span}}
@@ -52,6 +56,7 @@
 	// {{subscribe__text}}
 	&__text{
 		@include m-color('white');
+		font-size: 21px;
 
 		// {{subscribe__text--bold}}
 		&--bold{
@@ -96,5 +101,6 @@
 	// {{subscribe__title}}
 	&__title{
 		@include m-color('white');
+		font-size: 36px;
 	}
 }

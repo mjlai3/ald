@@ -82,7 +82,7 @@ $(() => {
 
 	$(window).unbind('.infscr');
 
-	$('.foo').click(function(){
+	$('.article__more').click(function(){
 		$('.grid').infinitescroll('retrieve');
 		return false;
 	});

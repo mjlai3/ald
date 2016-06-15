@@ -300,4 +300,15 @@
 			}
 		}
 	}
+
+	// {{article__more}}
+	&__more{
+		cursor: pointer;
+
+		// {{article__more__container}}
+		&__container{
+			text-align: center;
+			margin-bottom: 80px;
+		}
+	}
 }

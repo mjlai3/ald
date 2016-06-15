@@ -44,10 +44,12 @@
 		&--dark{
 			@include m-bgcolor('footer-dark');
 
+			// {{footer__container--dark-left}}
 			&-left{
 				display: flex;
 			}
 
+			// {{footer__container--dark-right}}
 			&-right{
 				display: flex;
 				justify-content: flex-end;
@@ -55,6 +57,7 @@
 				margin-right: 16px;
 			}
 
+			// {{footer__container--dark__text}}
 			&__text{
 				@include m-color('white');
 				padding: 25px 0;
@@ -69,14 +72,17 @@
 		}
 	}
 
+	// {{footer__ald}}
 	&__ald{
 		margin-bottom: 20px;
 	}
 
+	// {{footer__legendairy}}
 	&__legendairy{
 		margin-top: 45px;
 	}
 
+	// {{footer__social}}
 	&__social{
 		display: flex;
 		align-items: center;
