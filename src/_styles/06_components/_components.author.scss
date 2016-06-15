@@ -51,14 +51,14 @@ $jointhediscussionheight: 40px;
 
 			// {{author__join__container--inner}}
 			&--inner{
-				@include m-bgcolor('food');
+				@include m-bgcolor('jointhediscussion');
 				@include m-color('white');
 				display: flex;
 				align-items: center;
 				margin-bottom: - $jointhediscussionheight / 2;
 				height: $jointhediscussionheight;
 				padding: 0 20px;
-				border-radius: 30px;
+				border-radius: 5px;
 			}
 		}
 

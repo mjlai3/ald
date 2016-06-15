@@ -27,12 +27,12 @@ $(() => {
 	});
 
 	$(".slick__container--standard").slick({
-	    slidesToShow: 3,
 		centerMode: true,
-		focusOnSelect: true,
-		slidesToScroll: 1,
 		infinite: false,
-		variableWidth: true
+		variableWidth: true,
+		initialSlide: 1,
+		swipeToSlide: true,
+		touchThreshold: 100
 	});
 
 	var grid = $('.grid');

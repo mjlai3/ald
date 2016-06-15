@@ -83,12 +83,12 @@
         padding: 35px 0;
 
         &__frame{
-        	height: 700px;
-            width: 100vw;
+        	height: 480px;
             outline: none;
+            padding: 0 20px;
 
             @include mq(large){
-                width: 31.03448275862069%;
+                width: 400px;
             }
         }
 
