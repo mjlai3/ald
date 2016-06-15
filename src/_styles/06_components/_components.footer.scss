@@ -17,6 +17,7 @@
 
 					// {{footer__container--light__list__item__link}}
 					&__link{
+						@include font('Breakers-Regular');
 						@include m-color('footer-black');
 						font-size: 16px;
 
@@ -29,14 +30,16 @@
 
 			// {{footer__container--light__text}}
 			&__text{
-				font-size: 15px;
+				@include font('Breakers-Regular');
+				@include m-color('footer-black');
+				font-size: 16px;
 			}
 
 			// {{footer__container--light__title}}
 			&__title{
+				@include font('Breakers-Bold');
 				@include m-color('footer-title');
 				font-size: 18px;
-				font-weight: 600;
 			}
 		}
 
@@ -59,14 +62,15 @@
 
 			// {{footer__container--dark__text}}
 			&__text{
-				@include m-color('white');
+				@include m-color('footer-dark--text');
+				@include font('Breakers-Light');
 				padding: 25px 0;
-				font-size: 12px;
+				font-size: 14px;
 				&:nth-child(1n+2){
 					margin-left: 10px;
 				}
 				&:hover, &:focus{
-					@include m-color('white');
+					@include m-color('footer-dark--text');
 				}
 			}
 		}

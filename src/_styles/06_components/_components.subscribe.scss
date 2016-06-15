@@ -19,7 +19,7 @@
 				display:inline-block;
 			    width:19px;
 			    height:19px;
-			    margin:-1px 4px 0 0;
+			    margin:-2px 8px 0 0;
 			    vertical-align: middle;
 			    border: 2px solid f-color('white');
 			    cursor:pointer;
@@ -43,6 +43,7 @@
 		// Checkbox label so you can click the custom checkbox too
 		&__label{
 			@include m-color('white');
+			@include font('Breakers-Regular');
 			font-size: 21px;
 		}
 
@@ -56,42 +57,55 @@
 	// {{subscribe__text}}
 	&__text{
 		@include m-color('white');
+		@include font('Breakers-Light');
 		font-size: 21px;
+		margin-bottom: 20px;
 
 		// {{subscribe__text--bold}}
 		&--bold{
+			@include m-color('white');
+			@include font('Breakers-Light');
+			font-size: 21px;
 			font-weight: 600;
 		}
 	}
 
 	// {{subscribe__input}}
 	&__input{
+		@include font('Breakers-Regular');
+		font-size: 21px;
 		padding: 15px 25px;
-		border-bottom-left-radius: 30px;
-		border-top-left-radius: 30px;
-		box-shadow: none;
+		border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+		width: 70%;
 		border: 1px solid grey;
+		box-shadow: none;
 		border-right: none;
-		font-weight: 600;
 		outline: none;
+
+		&::-webkit-input-placeholder{
+			@include m-color('subscribe-placeholder');
+		}
 
 		// {{subscribe__input__container}}
 		&__container{
 			display: flex;
 			justify-content: center;
+			margin-top: 25px;
 		}
 	}
 
 	// {{subscribe__submit}}
 	&__submit{
+		@include font('Breakers-Regular');
 		@include m-color('white');
 		@include m-bgcolor('subscribe-btn');
 		padding: 15px;
-		font-weight: 600;
-		border-bottom-right-radius: 30px;
-		border-top-right-radius: 30px;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
 		border: 1px solid grey;
 		cursor: pointer;
+		font-size: 21px;
 
 		&:hover, &:focus{
 
@@ -101,6 +115,8 @@
 	// {{subscribe__title}}
 	&__title{
 		@include m-color('white');
+		@include font('breakers-regular');
 		font-size: 36px;
+		margin-bottom: 10px;
 	}
 }

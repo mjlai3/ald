@@ -1,0 +1,35 @@
+.filter{
+
+	&__container{
+		display: flex;
+		align-items: center;
+	}
+
+	&__button{
+
+	}
+
+	&__icon{
+
+		&--off{
+
+			.active{
+				display: none;
+			}
+		}
+
+		&--on{
+			display: none;
+			max-width: 63px;
+			max-height: 63px;
+
+			.active{
+				display: block;
+			}
+		}
+	}
+
+	&__text{
+		text-align: center;
+	}
+}
