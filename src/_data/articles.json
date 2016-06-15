@@ -4,7 +4,7 @@
 		"type":"article--full",
 		"category":"lifestyle",
 		"tag":"LIFESTYLE",
-		"icon":"favicon.ico",
+		"icon":"lifestyle-white.png",
 		"title":"Practising everyday mindfulness",
 		"background":"/images/mindfulness.jpg",
 		"text": [
@@ -20,7 +20,7 @@
 		"type":"article--small--full",
 		"category":"fitness",
 		"tag":"FITNESS",
-		"icon":"favicon.ico",
+		"icon":"fitness-white.png",
 		"title":"Exercise tip: Take the dogs out",
 		"background":"/images/placeholder.jpg",
 		"author": [
@@ -34,7 +34,7 @@
 		"type":"article--small--half",
 		"category":"lifestyle",
 		"tag":"LIFESTYLE",
-		"icon":"favicon.ico",
+		"icon":"lifestyle-white.png",
 		"title":"How to deal with uncertainty",
 		"background":"/images/placeholder.jpg",
 		"author": [
@@ -53,7 +53,7 @@
 		"type":"article--small--half",
 		"category":"food",
 		"tag":"FOOD",
-		"icon":"favicon.ico",
+		"icon":"food-white.png",
 		"title":"For the love of beter coffee",
 		"background":"/images/coffee-624x413.png",
 		"text": [
@@ -67,7 +67,7 @@
 		"type":"article--xmedium",
 		"category":"lifestyle",
 		"tag":"LIFESTYLE",
-		"icon":"favicon.ico",
+		"icon":"lifestyle-white.png",
 		"title":"Organise a country getaway in 10 minutes",
 		"background":"/images/Gaia-review.jpg",
 		"author": [
@@ -86,7 +86,7 @@
 		"type":"article--small--full",
 		"category":"lifestyle",
 		"tag":"LIFESTYLE",
-		"icon":"favicon.ico",
+		"icon":"lifestyle-white.png",
 		"title":"We're all busy, but don't neglect your girlfriends",
 		"background":"/images/two-girls-walking-arm-in-arm.jpg",
 		"author": [
@@ -101,7 +101,7 @@
 		"type":"article--medium",
 		"category":"food",
 		"tag":"FOOD",
-		"icon":"favicon.ico",
+		"icon":"food-white.png",
 		"title":"Recipe: Breakfast Burrito",
 		"background":"/images/placeholder.jpg",
 		"author": [
@@ -121,7 +121,7 @@
 		"type":"article--medium",
 		"category":"fitness",
 		"tag":"FITNESS",
-		"icon":"favicon.ico",
+		"icon":"fitness-white.png",
 		"title":"Powernaps; who has time for it?",
 		"background":"/images/HMSDW002.jpg",
 		"author": [
@@ -139,7 +139,7 @@
 		"type":"article--small--full",
 		"category":"food",
 		"tag":"FOOD",
-		"icon":"favicon.ico",
+		"icon":"food-white.png",
 		"title":"Recipe: Cauliflower-Parama",
 		"background":"/images/Cauliflower-final.jpg",
 		"author": [
@@ -153,7 +153,7 @@
 		"type":"article--small--half",
 		"category":"lifestyle",
 		"tag":"LIFESTYLE",
-		"icon":"favicon.ico",
+		"icon":"lifestyle-white.png",
 		"title":"All the rage with colouring books",
 		"background":"/images/woman-using-an-adult-colouring-book.jpg",
 		"author": [
@@ -172,7 +172,7 @@
 		"type":"article--small--half",
 		"category":"fitness",
 		"tag":"FITNESS",
-		"icon":"favicon.ico",
+		"icon":"fitness-white.png",
 		"title":"Using kettlebells can help with core training",
 		"background":"/images/1460693516.jpg",
 		"author": [
