@@ -52,10 +52,10 @@ $(() => {
 
 	grid.infinitescroll({
 		// Pagination element that will be hidden
-		navSelector: '#pagination',
+		navSelector: '.article__pagination',
 
 		// Next page link
-		nextSelector: '#pagination p a',
+		nextSelector: '.article__pagination p a',
 
 		// Selector of items to retrieve
 		itemSelector: '.grid-item',

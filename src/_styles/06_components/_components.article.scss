@@ -147,20 +147,28 @@
 
 	//{{article__text}}
 	&__text{
+		font-family: Breakers-Light;
+		font-size: 18px;
+		line-height: 1.25;
+
+		&:first-child{
+			margin-top: 15px;
+		}
+
 		.article--full &{
-			@include m-color('black');
+			@include m-color('article-black');
 		}
 		.article--xmedium &{
-			@include m-color('black');
+			@include m-color('article-black');
 		}
 		.article--medium &{
-			@include m-color('black');
+			@include m-color('article-black');
 		}
 		.article--small--full &{
 			@include m-color('white');
 		}
 		.article--small--half &{
-			@include m-color('black');
+			@include m-color('article-black');
 		}
 
 		//{{article__text__container}}
@@ -242,30 +250,40 @@
 
 	//{{article__title}}
 	&__title{
-		font-family: Breakers-Regular;
 		text-transform: uppercase;
+		font-size: 34px;
+		line-height: 1;
 
 		.article--full &{
-			@include m-color('black');
+			@include m-color('article-black');
+			font-family: Breakers-Light;
 		}
 		.article--xmedium &{
-			@include m-color('black');
+			@include m-color('article-black');
+			font-family: Breakers-Light;
 		}
 		.article--medium &{
-			@include m-color('black');
+			@include m-color('article-black');
+			font-family: Breakers-Light;
 		}
 		.article--small--full &{
 			@include m-color('white');
+			font-family: Breakers-Light;
 		}
 		.article--small--half &{
-			@include m-color('black');
+			@include m-color('article-black');
+			font-family: Breakers-Light;
 		}
 
 		.article--small--full.grid-item-5 &{
-			font-size: 34px;
+			font-family: Breakers-Regular;
 		}
 		.article--small--full.grid-item-6 &{
+			font-family: Breakers-Regular;
 			font-size: 20px;
+		}
+		.article--small--full.grid-item-7 &{
+			font-family: Breakers-Regular;
 		}
 	}
 
@@ -276,41 +294,44 @@
 		&__container{
 			display: flex;
 			align-items: center;
+			margin-bottom: 10px;
 		}
 
 		//{{article__author__img}}
 		&__img{
-			height: 30px;
-			width: 30px;
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
+			height: 35px;
+			width: 35px;
+			margin-right: 10px;
+			border-radius: 50%;
 		}
 
 		//{{article__author__name}}
 		&__name{
 			font-family: Breakers-Regular;
+			font-size: 14px;
 
 			.article--full &{
-				@include m-color('black');
+				@include m-color('article-author');
 			}
 			.article--xmedium &{
-				@include m-color('black');
+				@include m-color('article-author');
 			}
 			.article--medium &{
-				@include m-color('black');
+				@include m-color('article-author');
 			}
 			.article--small--full &{
 				@include m-color('white');
 			}
 			.article--small--half &{
-				@include m-color('black');
+				@include m-color('article-author');
 			}
 
 			.article--small--full.grid-item-5 &,
 			.article--small--full.grid-item-6 &,
 			.article--small--full.grid-item-7 &{
-				font-size: 14px;
 
 				small{
 					font-size: 12px;
@@ -328,5 +349,10 @@
 			text-align: center;
 			margin-bottom: 80px;
 		}
+	}
+
+	// {{article__pagination}}
+	&__pagination{
+		display: none;
 	}
 }
