@@ -1,23 +1,46 @@
 .footer{
+
+	// {{footer__container}}
 	&__container{
 
+		// {{footer__container--light}}
 		&--light{
-			@include m-bgcolor('footer-light');
+			padding: 70px 0 50px;
 
+			// {{footer__container--light__list}}
 			&__list{
 				margin: 0;
 				list-style: none;
+
+				// {{footer__container--light__list__item}}
+				&__item{
+
+					// {{footer__container--light__list__item__link}}
+					&__link{
+						@include m-color('footer-black');
+						font-size: 16px;
+
+						&:hover, &:focus{
+							@include m-color('footer-black');
+						}
+					}
+				}
 			}
 
+			// {{footer__container--light__text}}
 			&__text{
 				font-size: 15px;
 			}
 
+			// {{footer__container--light__title}}
 			&__title{
-				font-size: 17px;
+				@include m-color('footer-title');
+				font-size: 18px;
 				font-weight: 600;
 			}
 		}
+
+		// {{footer__container--dark}}	
 		&--dark{
 			@include m-bgcolor('footer-dark');
 
@@ -44,5 +67,20 @@
 				}
 			}
 		}
-	}	
+	}
+
+	&__ald{
+		margin-bottom: 20px;
+	}
+
+	&__legendairy{
+		margin-top: 45px;
+	}
+
+	&__social{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 40px;
+	}
 }
