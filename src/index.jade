@@ -22,7 +22,7 @@ block content
 												div.article__author__img(style="background-image:url('#{val.author[0].image}')")
 												div.article__author__name #{val.author[0].name}
 											else
-												div.article__author__name WITH #{val.author[0].name}
+												div.article__author__name <small>WITH</small> #{val.author[0].name}
 									if val.text
 										each paragraph in val.text
 											p.article__text #{paragraph.paragraph}
@@ -67,7 +67,7 @@ block content
 													div.article__author__img(style="background-image:url('#{val.author[0].image}')")
 													div.article__author__name #{val.author[0].name}
 												else
-													div.article__author__name WITH #{val.author[0].name}
+													div.article__author__name <small>WITH</small> #{val.author[0].name}
 										if val.text
 											each paragraph in val.text
 												p.article__text #{paragraph.paragraph}

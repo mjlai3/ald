@@ -242,6 +242,9 @@
 
 	//{{article__title}}
 	&__title{
+		font-family: Breakers-Regular;
+		text-transform: uppercase;
+
 		.article--full &{
 			@include m-color('black');
 		}
@@ -258,8 +261,11 @@
 			@include m-color('black');
 		}
 
+		.article--small--full.grid-item-5 &{
+			font-size: 34px;
+		}
 		.article--small--full.grid-item-6 &{
-			font-size: 16px;
+			font-size: 20px;
 		}
 	}
 
@@ -283,6 +289,8 @@
 
 		//{{article__author__name}}
 		&__name{
+			font-family: Breakers-Regular;
+
 			.article--full &{
 				@include m-color('black');
 			}
@@ -297,6 +305,16 @@
 			}
 			.article--small--half &{
 				@include m-color('black');
+			}
+
+			.article--small--full.grid-item-5 &,
+			.article--small--full.grid-item-6 &,
+			.article--small--full.grid-item-7 &{
+				font-size: 14px;
+
+				small{
+					font-size: 12px;
+				}
 			}
 		}
 	}
