@@ -105,6 +105,7 @@ $(() => {
 
 	    // Show all items if none of the other filters are checked
 	    if(!$('.filter__checkbox[value="fitness"]').is(":checked") && !$('.filter__checkbox[value="food"]').is(":checked") && !$('.filter__checkbox[value="lifestyle"]').is(":checked")){
+	    	$('.filter__checkbox[value="all"]').prop('checked', true);
 	    	$('.grid-item').show();
 	    	grid.masonry();
 	    	return;

@@ -32,18 +32,22 @@ block content
 		div.row
 			div.columns.large-12
 				.asadasdadsljkhasd
-						label
-							input.filter__checkbox(type='checkbox', value='food')
-							| food
-						label
-							input.filter__checkbox(type='checkbox', value='fitness')
-							| fitness
-						label
-							input.filter__checkbox(type='checkbox', value='lifestyle')
-							| lifestyle
-						label
-							input.filter__checkbox(type='checkbox', value='all')
-							| ALL
+							input.filter__checkbox#filter-food(type='checkbox', value='food')
+							label(for="filter-food")
+								span.filter__checkbox__span.food
+								| food
+							input.filter__checkbox#filter-fitness(type='checkbox', value='fitness')
+							label(for="filter-fitness")
+								span.filter__checkbox__span.fitness
+								| Fitness
+							input.filter__checkbox#filter-lifestyle(type='checkbox', value='lifestyle')
+							label(for="filter-lifestyle")
+								span.filter__checkbox__span.lifestyle
+								| lifestyle
+							input.filter__checkbox#filter-all(type='checkbox', value='all')
+							label(for="filter-all")
+								span.filter__checkbox__span.all
+								| all
 				div.filter__container
 					div.filter__button.filter__button--all
 						img.filter__icon--off(src="/images/filter-all-off.png")

@@ -32,4 +32,78 @@
 	&__text{
 		text-align: center;
 	}
+
+	// {{filter__checkbox}}
+	&__checkbox{
+
+		// Hidden default checkboxes
+		&[type="checkbox"]{
+			display: none;
+
+			// Unchecked style
+			& + label span{
+				display:inline-block;
+			    width:63px;
+			    height:63px;
+			    margin:-2px 8px 0 0;
+			    vertical-align: middle;
+			    cursor:pointer;
+			    border-radius: 5px;
+
+			    &.all{
+					background-image: url('/images/filter-all-off.png');
+				}
+			    &.fitness{
+					background-image: url('/images/filter-fitness-off.png');
+				}
+			    &.food{
+					background-image: url('/images/filter-food-off.png');
+				}
+			    &.lifestyle{
+					background-image: url('/images/filter-lifestyle-off.png');
+				}
+			}
+
+			&:checked + label span{
+				background-image: url('/images/filter-all-on.png');
+				background-size: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+
+				&.all{
+					background-image: url('/images/filter-all-on.png');
+				}
+			    &.fitness{
+					background-image: url('/images/filter-fitness-on.png');
+				}
+			    &.food{
+					background-image: url('/images/filter-food-on.png');
+				}
+			    &.lifestyle{
+					background-image: url('/images/filter-lifestyle-on.png');
+				}
+			}
+		}
+
+		// {{filter__checkbox__container}}
+		&__container{
+
+		}
+
+		// {{filter__checkbox__label}}
+		// Checkbox label so you can click the custom checkbox too
+		&__label{
+			@include m-color('white');
+			@include font('Breakers-Regular');
+			font-size: 21px;
+		}
+
+		// {{filter__checkbox__span}}
+		// Custom Checkbox
+		&__span{
+
+		}
+	}
+
+
 }
