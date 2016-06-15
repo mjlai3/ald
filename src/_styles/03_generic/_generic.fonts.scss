@@ -26,3 +26,9 @@
 	}
 }
 */
+
+@mixin font($font){
+	font-family: $font;
+	font-weight: normal;
+	font-style: normal;
+}

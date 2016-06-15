@@ -30,6 +30,7 @@
 			}
 			.article__icon{
 				display: inline;
+				margin-bottom: 10px;
 			}
 		}
 	}
@@ -42,6 +43,8 @@
 
 	//{{article__tag}}
 	&__tag{
+		@include font('Breakers-Black');
+		font-size: 16px;
 		
 		//{{article__tag__container}}
 		&__container{
