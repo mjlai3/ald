@@ -150,7 +150,7 @@
 
 	//{{article__text}}
 	&__text{
-		font-family: Breakers-Light;
+		@include font('Breakers-Light');
 		font-size: 18px;
 		line-height: 1.25;
 
@@ -259,34 +259,34 @@
 
 		.article--full &{
 			@include m-color('article-black');
-			font-family: Breakers-Light;
+			@include font('Breakers-Light');
 		}
 		.article--xmedium &{
 			@include m-color('article-black');
-			font-family: Breakers-Light;
+			@include font('Breakers-Light');
 		}
 		.article--medium &{
 			@include m-color('article-black');
-			font-family: Breakers-Light;
+			@include font('Breakers-Light');
 		}
 		.article--small--full &{
 			@include m-color('white');
-			font-family: Breakers-Light;
+			@include font('Breakers-Light');
 		}
 		.article--small--half &{
 			@include m-color('article-black');
-			font-family: Breakers-Light;
+			@include font('Breakers-Light');
 		}
 
 		.article--small--full.grid-item-5 &{
-			font-family: Breakers-Regular;
+			@include font('Breakers-Regular');
 		}
 		.article--small--full.grid-item-6 &{
-			font-family: Breakers-Regular;
+			@include font('Breakers-Regular');
 			font-size: 20px;
 		}
 		.article--small--full.grid-item-7 &{
-			font-family: Breakers-Regular;
+			@include font('Breakers-Regular');
 		}
 	}
 
@@ -313,7 +313,7 @@
 
 		//{{article__author__name}}
 		&__name{
-			font-family: Breakers-Regular;
+			@include font('Breakers-Regular');
 			font-size: 14px;
 
 			.article--full &{
