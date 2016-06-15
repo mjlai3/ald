@@ -6,7 +6,7 @@
 		"tag":"LIFESTYLE",
 		"icon":"favicon.ico",
 		"title":"Practising everyday mindfulness",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/mindfulness.jpg",
 		"text": [
 			{
 				"paragraph": "Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc."
@@ -55,7 +55,7 @@
 		"tag":"FOOD",
 		"icon":"favicon.ico",
 		"title":"For the love of beter coffee",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/coffee-624x413.jpg",
 		"text": [
 			{
 				"paragraph": "Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit."
@@ -69,7 +69,7 @@
 		"tag":"LIFESTYLE",
 		"icon":"favicon.ico",
 		"title":"Organise a country getaway in 10 minutes",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/Gaia-review.jpg",
 		"author": [
 			{
 				"image": "favicon.ico",
@@ -88,7 +88,7 @@
 		"tag":"LIFESTYLE",
 		"icon":"favicon.ico",
 		"title":"We're all busy, but don't neglect your girlfriends",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/two-girls-walking-arm-in-arm.jpg",
 		"author": [
 			{
 				"image": "favicon.ico",
@@ -123,7 +123,7 @@
 		"tag":"FITNESS",
 		"icon":"favicon.ico",
 		"title":"Powernaps; who has time for it?",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/HMSDW002.jpg",
 		"author": [
 			{
 				"name": "FIONA BAKER"
@@ -141,7 +141,7 @@
 		"tag":"FOOD",
 		"icon":"favicon.ico",
 		"title":"Recipe: Cauliflower-Parama",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/Cauliflower-final.jpg",
 		"author": [
 			{
 				"image": "favicon.ico",
@@ -155,7 +155,7 @@
 		"tag":"LIFESTYLE",
 		"icon":"favicon.ico",
 		"title":"All the rage with colouring books",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/woman-using-an-adult-colouring-book.jpg",
 		"author": [
 			{
 				"image": "favicon.ico",
@@ -174,7 +174,7 @@
 		"tag":"FITNESS",
 		"icon":"favicon.ico",
 		"title":"Using kettlebells can help with core training",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/1460693516.jpg",
 		"author": [
 			{
 				"image": "favicon.ico",

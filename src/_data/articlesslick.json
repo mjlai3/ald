@@ -6,7 +6,7 @@
 		"tag":"FITNESS",
 		"icon":"favicon.ico",
 		"title":"Why group training pays pff better in the long run",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/unnamed-1-1.jpg",
 		"author": [
 			{
 				"name": "OSHAY KEY"
@@ -20,7 +20,7 @@
 		"tag":"LIFESTYLE",
 		"icon":"favicon.ico",
 		"title":"Getting more done with focused work",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/blogging.jpg",
 		"author": [
 			{
 				"name": "EMILY BARKER"
@@ -34,7 +34,7 @@
 		"tag":"FOOD",
 		"icon":"favicon.ico",
 		"title":"The one pan meal",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/farmers-frittata-paleo-the-whole-daily.jpg",
 		"author": [
 			{
 				"name": "SUZANNE HEYN"
@@ -48,7 +48,7 @@
 		"tag":"LIFESTYLE",
 		"icon":"favicon.ico",
 		"title":"You'll never be \"ready\", so stop waiting",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/Skins-A200-This-Canberran-Life-Eat-Pray-Workout-5-1024x682.jpg",
 		"author": [
 			{
 				"name": "EMILY BARKER"
@@ -62,7 +62,7 @@
 		"tag":"FOOD",
 		"icon":"favicon.ico",
 		"title":"Recipe: Strawberry and blueberry cake",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/Lemon-and-blueberry-drizzle-cake.jpg",
 		"author": [
 			{
 				"name": "SUZANNE HEYN"
@@ -75,39 +75,39 @@
 		"category":"lifestyle",
 		"tag":"LIFESTYLE",
 		"icon":"favicon.ico",
-		"title":"You'll never be \"ready\", so stop waiting",
-		"background":"/images/placeholder.jpg",
+		"title":"Books to unwind to this week",
+		"background":"/images/640x960xff3.jpg.pagespeed.ic.iY6ax4Sc65.jpg",
 		"author": [
 			{
-				"name": "EMILY BARKER"
+				"name": "OASHAY KEY"
 			}
 		]
 	},
 	{
 		"grid":"grid-item-7",
 		"type":"article--small--full",
-		"category":"lifestyle",
-		"tag":"LIFESTYLE",
+		"category":"fitness",
+		"tag":"FITNESS",
 		"icon":"favicon.ico",
-		"title":"You'll never be \"ready\", so stop waiting",
-		"background":"/images/placeholder.jpg",
+		"title":"Swimming, not skinny-dipping",
+		"background":"/images/10294420724_0300cf921d_o.jpg",
 		"author": [
 			{
-				"name": "EMILY BARKER"
+				"name": "SUZANNE HEYN"
 			}
 		]
 	},
 	{
 		"grid":"grid-item-6",
 		"type":"article--small--full",
-		"category":"food",
-		"tag":"FOOD",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
 		"icon":"favicon.ico",
-		"title":"Recipe: Strawberry and blueberry cake",
-		"background":"/images/placeholder.jpg",
+		"title":"Having balance in the family",
+		"background":"/images/Summit-Fitzroy-Island-Walk-1024x682.jpg",
 		"author": [
 			{
-				"name": "SUZANNE HEYN"
+				"name": "TODD McCULLOUGH"
 			}
 		]
 	}
