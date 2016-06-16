@@ -53,19 +53,54 @@ $jointhediscussionheight: 40px;
 			// {{author__join__container--inner}}
 			&--inner{
 				@include m-bgcolor('jointhediscussion');
-				@include m-color('white');
 				display: flex;
 				align-items: center;
 				margin-bottom: - $jointhediscussionheight / 2;
 				height: $jointhediscussionheight;
 				padding: 0 20px;
 				border-radius: 5px;
+				pointer-events: auto;
+
+				&:hover, &:focus{
+					@include m-color('white');
+				}
 			}
 		}
 
 		// {{author__join__text}}
 		&__text{
-
+			@include font('Breakers-Regular');
+			@include m-color('white');
+			font-size: 21px;
 		}
+	}
+
+	// {{author__info}}
+	&__info{
+		margin-left: 20px;
+	}
+
+	// {{author__social}}
+	&__social{
+
+		// {{author__social__link}}
+		&__link{
+			margin-right: 10px;
+		}
+	}
+
+	// {{author__name}}
+	&__name{
+		@include font('Breakers-Regular');
+		@include m-color('paragraph');
+		font-size: 18px;
+	}
+
+	// {{author__text}}
+	&__text{
+		@include font('Breakers-Light');
+		@include m-color('paragraph');
+		font-size: 18px;
+		margin-bottom: 15px;
 	}
 }

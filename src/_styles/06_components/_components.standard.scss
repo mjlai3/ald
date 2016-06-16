@@ -84,8 +84,20 @@
 		padding: 0 12px;
 
 		&--view{
+			@include m-color('article-author');
+			@include font('Breakers-Regular');
 			display: block;
 			text-align: center;
+			font-size: 18px;
+			margin-bottom: 55px;
+
+			&:hover, &:focus{
+				@include m-color('article-author');
+			}
+
+			& small{
+				font-size: 16px;
+			}
 		}
 	}
 }

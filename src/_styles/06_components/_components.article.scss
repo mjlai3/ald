@@ -9,7 +9,7 @@
 		outline: none;
 
 		// Hover tag expand full and reduce opacity
-		&:hover{
+		&:hover, &:focus{
 			text-decoration: none;
 			.article__tag__container--outer{
 				height: 100%;
