@@ -33,6 +33,16 @@ $(() => {
 		touchThreshold: 100
 	});
 
+	$("header").headroom({
+		"offset": 205,
+		"tolerance": 5,
+		"classes": {
+			"initial": "animated",
+			"pinned": "slideDown",
+			"unpinned": "slideUp"
+		}
+	});
+
 	var grid = $('.grid');
 
 	// grid.packery({
