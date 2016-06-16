@@ -2,28 +2,30 @@
 
 	// {{breadcrumb__container}}
 	&__container{
-
+		margin-bottom: 15px;
 	}
 
-	// {{breadcrumb__container__list}}
+	// {{breadcrumb__list}}
 	&__list{
 		list-style-type: none;
 
-		// {{breadcrumb__container__list__enclosure}}
+		// {{breadcrumb__list__enclosure}}
 		&__enclosure{
 			display: inline;
 			font-size: 12px;
 
-			// {{breadcrumb__container__list__enclosure__link}}
+			// {{breadcrumb__list__enclosure__link}}
 			&__link{
-				@include m-color('black');
+				@include m-color('article-black');
+				@include font('Breakers-Regular');
+				font-size: 14px;
 
 				&:hover, &:focus{
 					@include m-color('black');
 				}
 			}
 
-			// {{breadcrumb__container__list__enclosure__divider}}
+			// {{breadcrumb__list__enclosure__divider}}
 			&--divider{
 				
 			}
