@@ -27,10 +27,8 @@ $(() => {
 	});
 
 	$(".slick__container--standard").slick({
-		centerMode: true,
 		infinite: false,
 		variableWidth: true,
-		initialSlide: 1,
 		swipeToSlide: true,
 		touchThreshold: 100
 	});
