@@ -74,14 +74,14 @@
 				}
 
 				.article--small--full &{
+					@include m-zindex('tags');
 					width: 25%;
 					position: absolute;
-					z-index: 1;
 				}
 
 				.article--small--half &{
+					@include m-zindex('tags');
 					width: 25%;
-					z-index: 1;
 				}
 
 				.lifestyle &{

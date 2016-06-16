@@ -2,4 +2,24 @@ mixin header(spec)
 	- spec = spec || {}
 	- spec.__class = spec.__class || ''
 
-	header(style="height:100px;background-color:red;").header
+	
+	header.headroom
+		div.row.fullheight
+			div.columns.large-12.fullheight
+				div.header__container
+					div.header__menu__container
+						img.header__menu__img(src="/images/menu.png", alt="menu icon")
+						div.header__menu__text Menu
+					a(href="/")
+						img.header__logo(src="/images/ALD-logo.png", alt="logo")
+					div.header__right__container
+						div.header__media__container
+							a(href="#")
+								img.header__facebook(src="/images/facebook.png", alt="facebook")
+								img.header__facebook-white(src="/images/facebook-white.png", alt="facebook")
+							a(href="#")
+								img.header__instagram(src="/images/instagram.png", alt="instagram")
+								img.header__instagram-white(src="/images/instagram-white.png", alt="instagram")
+							img.header__subscribe(src="/images/subscribe.png", alt="subscribe")
+							img.header__subscribe-white(src="/images/subscribe-white.png", alt="subscribe")
+						img.header__search(src="/images/search.png", alt="search")

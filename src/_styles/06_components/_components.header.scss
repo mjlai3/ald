@@ -1,7 +1,135 @@
+$headerHeight: 200px;
+
 .header{
-	
+
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+
+	&__menu{
+
+		&__container{
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+		}
+
+		&__img{
+			margin-right: 17px;
+		}
+
+		&__text{
+			@include m-color('white');
+			@include font('Breakers-Regular');
+			font-size: 26px;
+		}
+	}
+
+	&__right{
+
+		&__container{
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__media{
+
+		&__container{
+			@include m-bgcolor('white');
+			padding: 17px;
+			margin-right: 40px;
+			border-radius: 50px;
+
+			.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned &, .headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned &{
+				background-color: transparent;
+			}
+
+			a{
+				margin: 0 15px;
+			}
+		}
+	}
+
+	&__search{
+		cursor: pointer;
+	}
+
+	&__facebook{
+
+		.headroom--pinned.headroom--not-top &{
+			display: none;
+		}
+
+		&-white{
+			display: none;
+
+			.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned &{
+				display: inline;
+			}
+		}
+	}
+
+	&__instagram{
+
+		.headroom--pinned.headroom--not-top &{
+			display: none;
+		}
+
+		&-white{
+			display: none;
+
+			.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned &{
+				display: inline;
+			}
+		}
+	}
+
+	&__subscribe{
+		cursor: pointer;
+		margin: 0 15px;
+
+		.headroom--pinned.headroom--not-top &{
+			display: none;
+		}
+
+		&-white{
+			margin: 0 15px;
+			display: none;
+
+			.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned &{
+				display: inline;
+			}
+		}
+	}
+
+	&__logo{
+
+		.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned &, .headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned &{
+			height: 60px;
+		}
+	}
 }
 
-.headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
-.headroom--unpinned {top: -100px;}
-.headroom--pinned {top: 0;}
+.headroom {
+	@include m-bgcolor('header');
+	@include m-zindex('header');
+	position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;
+	height: $headerHeight;
+
+	&--unpinned{
+		top: -$headerHeight;
+	}
+
+	&--pinned{
+		height: 70px;
+		top: 0;
+	}
+
+	&--top{
+		height: $headerHeight;
+	}
+}
