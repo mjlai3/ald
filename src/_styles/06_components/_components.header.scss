@@ -1,5 +1,3 @@
-$headerHeight: 200px;
-
 .header{
 
 	&__container{
@@ -43,6 +41,7 @@ $headerHeight: 200px;
 			padding: 17px;
 			margin-right: 40px;
 			border-radius: 50px;
+			transition: all 0.3s ease-in-out;
 
 			.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned &, .headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned &{
 				background-color: transparent;
@@ -107,6 +106,8 @@ $headerHeight: 200px;
 	}
 
 	&__logo{
+		height: 152px;
+		transition: all 0.3s ease-in-out;
 
 		.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned &, .headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned &{
 			height: 60px;
@@ -117,11 +118,15 @@ $headerHeight: 200px;
 .headroom {
 	@include m-bgcolor('header');
 	@include m-zindex('header');
-	position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;
-	height: $headerHeight;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: all 0.3s ease-in-out;
+	height: 200px;
 
 	&--unpinned{
-		top: -$headerHeight;
+		top: -200px;
 	}
 
 	&--pinned{
@@ -130,6 +135,6 @@ $headerHeight: 200px;
 	}
 
 	&--top{
-		height: $headerHeight;
+		height: 200px;
 	}
 }
