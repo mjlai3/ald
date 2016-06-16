@@ -7,12 +7,18 @@
  */
 
  a{
- 	&:hover{
+ 	@include m-color('link');
+ 	&:hover,&:focus{
+ 		@include m-color('link');
  		text-decoration: underline;
  	}
  }
 
  p{
+ 	@include font('Breakers-Light');
+ 	@include m-color('paragraph');
+ 	font-size: 21px;
+
  	&:last-child{
  		margin-bottom: 0;
  	}

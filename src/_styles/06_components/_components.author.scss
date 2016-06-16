@@ -7,8 +7,8 @@ $jointhediscussionheight: 40px;
 		position: relative;
 		display: flex;
 		align-items: flex-start;
-		border-top: 1px solid grey;
-		border-bottom: 1px solid grey;
+		border-top: 1px solid #999999;
+		border-bottom: 1px solid #999999;
 		padding: 30px 0;
 		margin: 40px 0;
 	}
@@ -20,7 +20,7 @@ $jointhediscussionheight: 40px;
 		&__container{
 			height: 150px;
 			width: 150px;
-			border: 1px solid grey;
+			border: 1px solid #999999;
 			border-radius: 50%;
 			flex-shrink: 0;
 		}
@@ -39,6 +39,7 @@ $jointhediscussionheight: 40px;
 				top: 0;
 				right: 0;
 				bottom: 0;
+				pointer-events: none;
 			}
 
 			// {{author__join__container--center}}
