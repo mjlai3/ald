@@ -52,6 +52,10 @@
             position: static;
         }
 
+        &.slick-dotted.slick-slider{
+            margin-bottom: 0;
+        }
+
         // The container for each dot
         .slick-dots li{
             margin: 0 45px;

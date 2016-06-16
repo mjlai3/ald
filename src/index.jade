@@ -31,40 +31,28 @@ block content
 			div.slick__container--index__frame 4
 		div.row
 			div.columns.large-12
-				.asadasdadsljkhasd
-							input.filter__checkbox#filter-food(type='checkbox', value='food')
-							label(for="filter-food")
-								span.filter__checkbox__span.food
-								| food
+				div.filter__container--outer
+					div.filter__container--inner
+						div.filter__button
+							input.filter__checkbox#filter-all(type='checkbox', value='all', checked='')
+							label.filter__checkbox__label(for="filter-all")
+								span.filter__checkbox__span.all
+								| All
+						div.filter__button
 							input.filter__checkbox#filter-fitness(type='checkbox', value='fitness')
-							label(for="filter-fitness")
+							label.filter__checkbox__label(for="filter-fitness")
 								span.filter__checkbox__span.fitness
 								| Fitness
+						div.filter__button
 							input.filter__checkbox#filter-lifestyle(type='checkbox', value='lifestyle')
-							label(for="filter-lifestyle")
+							label.filter__checkbox__label(for="filter-lifestyle")
 								span.filter__checkbox__span.lifestyle
-								| lifestyle
-							input.filter__checkbox#filter-all(type='checkbox', value='all')
-							label(for="filter-all")
-								span.filter__checkbox__span.all
-								| all
-				div.filter__container
-					div.filter__button.filter__button--all
-						img.filter__icon--off(src="/images/filter-all-off.png")
-						img.filter__icon--on(src="/images/filter-all-on.png")
-						div.filter__text All
-					div.filter__button.filter__button--fitness
-						img.filter__icon--off(src="/images/filter-fitness-off.png")
-						img.filter__icon--on(src="/images/filter-fitness-on.png")
-						div.filter__text Fitness
-					div.filter__button.filter__button--lifestyle
-						img.filter__icon--off(src="/images/filter-lifestyle-off.png")
-						img.filter__icon--on(src="/images/filter-lifestyle-on.png")
-						div.filter__text Lifestyle
-					div.filter__button.filter__button--food
-						img.filter__icon--off(src="/images/filter-food-off.png")
-						img.filter__icon--on(src="/images/filter-food-on.png")
-						div.filter__text Food
+								| Lifestyle
+						div.filter__button		
+							input.filter__checkbox#filter-food(type='checkbox', value='food')
+							label.filter__checkbox__label(for="filter-food")
+								span.filter__checkbox__span.food
+								| Food
 		div.row
 			div.columns.large-12
 				div.grid

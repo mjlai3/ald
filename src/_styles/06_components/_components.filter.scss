@@ -1,36 +1,22 @@
 .filter{
 
 	&__container{
-		display: flex;
-		align-items: center;
+
+		&--outer{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 45px 0 40px;
+		}
+
+		&--inner{
+			display: flex;
+		}
 	}
 
 	&__button{
-
-	}
-
-	&__icon{
-
-		&--off{
-
-			.active{
-				display: none;
-			}
-		}
-
-		&--on{
-			display: none;
-			max-width: 63px;
-			max-height: 63px;
-
-			.active{
-				display: block;
-			}
-		}
-	}
-
-	&__text{
 		text-align: center;
+		margin: 0 25px;
 	}
 
 	// {{filter__checkbox}}
@@ -40,15 +26,17 @@
 		&[type="checkbox"]{
 			display: none;
 
+			& + label{
+				margin: 0;
+			}
+
 			// Unchecked style
 			& + label span{
-				display:inline-block;
+				display:block;
 			    width:63px;
 			    height:63px;
-			    margin:-2px 8px 0 0;
 			    vertical-align: middle;
 			    cursor:pointer;
-			    border-radius: 5px;
 
 			    &.all{
 					background-image: url('/images/filter-all-off.png');
@@ -62,6 +50,10 @@
 			    &.lifestyle{
 					background-image: url('/images/filter-lifestyle-off.png');
 				}
+			}
+
+			&:checked + label{
+				@include font('Breakers-Bold');
 			}
 
 			&:checked + label span{
@@ -85,17 +77,12 @@
 			}
 		}
 
-		// {{filter__checkbox__container}}
-		&__container{
-
-		}
-
 		// {{filter__checkbox__label}}
 		// Checkbox label so you can click the custom checkbox too
 		&__label{
-			@include m-color('white');
 			@include font('Breakers-Regular');
-			font-size: 21px;
+			@include m-color('article-black');
+			font-size: 20px;
 		}
 
 		// {{filter__checkbox__span}}
