@@ -137,13 +137,13 @@ $(() => {
 		$('.header__right__container').width($('.header__menu__container').width())
 	}
 
-	$(window).resize(){
+	$(window).resize(function(){
 		if($('.header__right__container').width() > $('.header__menu__container').width()){
 			$('.header__menu__container').width($('.header__right__container').width())
 		}
 		else{
 			$('.header__right__container').width($('.header__menu__container').width())
 		}
-	}
+	});
 
 });
