@@ -9,7 +9,7 @@
             width: 100vw;
             outline: none;
 
-            @include mq(large){
+            @include mq(xlarge){
                 width: 1160px;
             }
         }
