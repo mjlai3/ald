@@ -242,6 +242,11 @@
 					height: 100%;
 					padding: 3.44827586206897%;
 				}
+
+				// To show absolute for header slick but not the masonry 
+				.grid-item-5 &, .grid-item-6 &, .grid-item-7 &{
+					position: absolute;
+				}
 			}
 
 			//{{article__text__container--inner}}
