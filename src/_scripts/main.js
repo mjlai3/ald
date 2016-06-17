@@ -139,6 +139,8 @@ $(() => {
 	}
 
 	$(window).resize(function(){
+		$('.header__right__container').css('width', 'auto');
+		$('.header__menu__container').css('width', 'auto');
 		if($('.header__right__container').width() > $('.header__menu__container').width()){
 			$('.header__menu__container').width($('.header__right__container').width())
 		}
