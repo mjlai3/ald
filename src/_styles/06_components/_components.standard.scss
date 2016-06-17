@@ -8,6 +8,8 @@
 		}
 
 		&__text{
+			@include m-color('white');
+			@include font('Breakers-Bold');
 			position: absolute;
 			top: 0;
 			left: 0;
