@@ -73,8 +73,8 @@ block content
 								img(src="favicon.ico")
 								div.author__join__text Join in the discussion
 				a.standard__comments--view(href="#") VIEW COMMENTS <small>(</small>3<small>)</small>
-		div
-			div.slick__container--standard(style="background-image: url('/images/placeholder2.jpg');")
+		div(style="background-image: url('/images/placeholder2.jpg');")
+			div.slick__container--standard
 				each val in site.data.articlesslickstandard
 					- var grid = (val.grid === "undefined" ? '' : val.grid)
 					div.slick__container--standard__frame
@@ -98,6 +98,7 @@ block content
 										if val.text
 											each paragraph in val.text
 												p.article__text #{paragraph.paragraph}
+			+subscribe()
 
 
 	

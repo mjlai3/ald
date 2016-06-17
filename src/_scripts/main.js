@@ -10,6 +10,7 @@ import foundation from 'foundation-sites';
 
 import Header from '../_modules/header/header';
 import Footer from '../_modules/footer/footer';
+import Footer from '../_modules/subscribe/subscribe';
 
 $(() => {
 	
