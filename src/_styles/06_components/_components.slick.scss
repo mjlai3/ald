@@ -1,13 +1,25 @@
 .slick__container {
 
+    // {{slick__container--index}}
     &--index{
         // width: 100%;
-        padding: 235px 0 35px;
+        padding: 115px 0 25px; // padding top for more space for header 
+        background-size: 20%;
+        overflow: hidden;
 
+        @include mq(large){
+            padding: 235px 0 35px; // padding top for more space for header 
+        }
+
+        // {{slick__container--index__frame}}
         &__frame{
-            height: 700px;
+            height: 285px;
             width: 100vw;
             outline: none;
+
+            @include mq(large){
+                height: 700px;
+            }
 
             @include mq(xlarge){
                 width: 1160px;
@@ -82,11 +94,13 @@
         }
     }
 
+    // {{slick__container--standard}}
     &--standard{
         // width: 100%;
         padding: 35px 0;
         overflow: hidden;
 
+        // {{slick__container--standard__frame}}
         &__frame{
         	height: 480px;
             outline: none;

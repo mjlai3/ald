@@ -2,11 +2,12 @@ extends _layouts/base
 
 block content
 	div.container
-		div.slick__container--index(style="background-image: url('/images/placeholder2.jpg');")
+		div.slick__container--index(style="background-image: url('/images/pattern.png');")
 			div.slick__container--index__frame
 				each val in site.data.articlesslick
-					- var grid = (val.grid === "undefined" ? '' : val.grid)
-					div.grid-item--slick(class="#{grid} #{val.type} #{val.category}")
+					- var grid = (val.grid === undefined ? '' : val.grid)
+					- var showForLarge = (val.showForLarge === undefined ? '' : val.showForLarge)
+					div.grid-item--slick(class="#{grid} #{showForLarge} #{val.type} #{val.category}")
 						a.article__link(href="#")
 							div.article__img(style="background-image:url('#{val.background}')")
 								div.article__tag__container--outer
@@ -29,7 +30,7 @@ block content
 			div.slick__container--index__frame 2
 			div.slick__container--index__frame 3
 			div.slick__container--index__frame 4
-		div.row
+		div.row.show-for-large
 			div.columns.large-12
 				div.filter__container--outer
 					div.filter__container--inner
@@ -59,7 +60,7 @@ block content
 					div.grid-sizer
 					div.gutter-sizer
 					each val in site.data.articles
-						- var grid = (val.grid === "undefined" ? '' : val.grid)
+						- var grid = (val.grid === undefined ? '' : val.grid)
 						div.grid-item(class="#{grid} #{val.type} #{val.category}")
 							a.article__link(href="#")
 								div.article__img(style="background-image:url('#{val.background}')")

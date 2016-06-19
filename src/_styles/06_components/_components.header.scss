@@ -1,5 +1,6 @@
 .header{
 
+	// {{header__container}}
 	&__container{
 		display: flex;
 		justify-content: space-between;
@@ -7,18 +8,27 @@
 		height: 100%;
 	}
 
+	// {{header__menu}}
 	&__menu{
 
+		// {{header__menu__container}}
 		&__container{
 			display: flex;
 			align-items: center;
 			cursor: pointer;
 		}
 
+		// {{header__menu__img}}
 		&__img{
 			margin-right: 17px;
+			width: 35px;
+
+			@include mq(large){
+				width: auto;
+			}
 		}
 
+		// {{header__menu__text}}
 		&__text{
 			@include m-color('white');
 			@include font('Breakers-Regular');
@@ -26,16 +36,20 @@
 		}
 	}
 
+	// {{header__right}}
 	&__right{
 
+		// {{header__right__container}}
 		&__container{
 			display: flex;
 			align-items: center;
 		}
 	}
 
+	// {{header__media}}
 	&__media{
 
+		// {{header__media__container}}
 		&__container{
 			@include m-bgcolor('white');
 			padding: 17px;
@@ -53,16 +67,24 @@
 		}
 	}
 
+	// {{header__search}}
 	&__search{
 		cursor: pointer;
+		width: 45px;
+
+		@include mq(large){
+			width: auto;
+		}
 	}
 
+	// {{header__facebook}}
 	&__facebook{
 
 		.headroom--pinned.headroom--not-top &{
 			display: none;
 		}
 
+		// {{header__facebook-white}}
 		&-white{
 			display: none;
 
@@ -72,12 +94,14 @@
 		}
 	}
 
+	// {{header__instagram}}
 	&__instagram{
 
 		.headroom--pinned.headroom--not-top &{
 			display: none;
 		}
 
+		// {{header__instagram-white}}
 		&-white{
 			display: none;
 
@@ -87,6 +111,7 @@
 		}
 	}
 
+	// {{header__subscribe}}
 	&__subscribe{
 		cursor: pointer;
 		margin: 0 15px;
@@ -95,6 +120,7 @@
 			display: none;
 		}
 
+		// {{header__subscribe-white}}
 		&-white{
 			margin: 0 15px;
 			display: none;
@@ -108,20 +134,25 @@
 	// {{header__logo}}
 	&__logo{
 		transition: all 0.3s ease-in-out;
-		width: 100px;
+		width: auto;
+		height: 80px;
 
 		@include mq(large){
 			height: 152px;
-			width: auto;
 		}
 
 		// Smaller version of the header when scrolling up
 		.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned &, .headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned &{
-			height: 60px;
+			height: 80px;
+
+			@include mq(large){
+				height: 60px;
+			}
 		}
 	}
 }
 
+// {{headroom}}
 .headroom {
 	@include m-bgcolor('header');
 	@include m-zindex('header');
@@ -130,18 +161,33 @@
 	left: 0;
 	right: 0;
 	transition: all 0.3s ease-in-out;
-	height: 200px;
+	height: 100px;
 
+	@include mq(large){
+		height: 200px;
+	}
+
+	// {{headroom--unpinned}}
 	&--unpinned{
 		top: -200px;
 	}
 
+	// {{headroom--pinned}}
 	&--pinned{
-		height: 70px;
+		height: 100px;
 		top: 0;
+
+		@include mq(large){
+			height: 70px;
+		}
 	}
 
+	// {{headroom--top}}
 	&--top{
-		height: 200px;
+		height: 100px;
+
+		@include mq(large){
+			height: 200px;
+		}
 	}
 }

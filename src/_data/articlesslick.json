@@ -25,7 +25,8 @@
 			{
 				"name": "EMILY BARKER"
 			}
-		]
+		],
+		"showForLarge":"show-for-large"
 	},
 	{
 		"grid":"grid-item-6",
@@ -39,7 +40,8 @@
 			{
 				"name": "SUZANNE HEYN"
 			}
-		]
+		],
+		"showForLarge":"show-for-large"
 	},
 	{
 		"grid":"grid-item-7",
@@ -67,7 +69,8 @@
 			{
 				"name": "SUZANNE HEYN"
 			}
-		]
+		],
+		"showForLarge":"show-for-large"
 	},
 	{
 		"grid":"grid-item-7",
@@ -95,7 +98,8 @@
 			{
 				"name": "SUZANNE HEYN"
 			}
-		]
+		],
+		"showForLarge":"show-for-large"
 	},
 	{
 		"grid":"grid-item-6",
@@ -109,6 +113,7 @@
 			{
 				"name": "TODD McCULLOUGH"
 			}
-		]
+		],
+		"showForLarge":"show-for-large"
 	}
 ]

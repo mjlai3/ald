@@ -24,7 +24,15 @@ $(() => {
 		centerMode: true,
 		focusOnSelect: true,
 		variableWidth: true,
-		appendDots: '.slick__container--index'
+		appendDots: '.slick__container--index',
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					dots: false
+				}
+			}
+		]
 	});
 
 	$(".slick__container--standard").slick({
