@@ -105,10 +105,17 @@
 		}
 	}
 
+	// {{header__logo}}
 	&__logo{
-		height: 152px;
 		transition: all 0.3s ease-in-out;
+		width: 100px;
 
+		@include mq(large){
+			height: 152px;
+			width: auto;
+		}
+
+		// Smaller version of the header when scrolling up
 		.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned &, .headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned &{
 			height: 60px;
 		}
