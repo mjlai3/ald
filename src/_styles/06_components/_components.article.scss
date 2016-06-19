@@ -43,8 +43,13 @@
 
 	//{{article__tag}}
 	&__tag{
-		@include font('Breakers-Black');
-		font-size: 16px;
+		@include font('Breakers-Bold');
+		font-size: 12px;
+
+		@include mq(large){
+			@include font('Breakers-Black');
+			font-size: 16px;
+		}
 		
 		//{{article__tag__container}}
 		&__container{
@@ -59,29 +64,46 @@
 				justify-content: center;
 				align-items: center;
 				transition: all 0.3s;
-				height: 30px;
+				height: 20px;
+				width: 60px;
 
 				.article--full &{
-					width: 11.842117728%;
+					@include mq(large){
+						width: 11.842117728%;
+						height: 30px;
+					}
 				}
 
 				.article--xmedium &{
-					width: 23.684210526%;
+					@include mq(large){
+						width: 23.684210526%;
+						height: 30px;
+					}
 				}
 
 				.article--medium &{
-					width: 32.142857142%;
+					@include mq(large){
+						width: 32.142857142%;
+						height: 30px;
+					}
 				}
 
 				.article--small--full &{
 					@include m-zindex('tags');
-					width: 25%;
 					position: absolute;
+
+					@include mq(large){
+						width: 25%;
+						height: auto;
+					}
 				}
 
 				.article--small--half &{
 					@include m-zindex('tags');
-					width: 25%;
+					@include mq(large){
+						width: 25%;
+						height: 30px;
+					}
 				}
 
 				.lifestyle &{
