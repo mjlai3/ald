@@ -28,6 +28,46 @@
             }
         }
 
+        // {{slick__container--index__container}}
+        &__container{
+            position: relative;
+        }
+
+        // {{slick__container--index__arrow}}
+        &__arrow{
+            position: relative;
+            height: 100%;
+            max-width: 1160px;
+            margin: 0 auto;
+
+            // {{slick__container--index__arrow__container}}
+            &__container{
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+
+                .slick-prev{
+                    margin-top: 40px;
+                    left: -40px;
+
+                    &:before{
+                        content: url('/images/hero-arrow-left.png');
+                    }
+                }
+
+                .slick-next{
+                    margin-top: 40px;
+                    right: 26px;
+
+                    &:before{
+                        content: url('/images/hero-arrow.png');
+                    }
+                }
+            }
+        }
+
         .slick-slide img {
             display: none;
         }

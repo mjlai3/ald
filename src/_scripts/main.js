@@ -25,6 +25,7 @@ $(() => {
 		focusOnSelect: true,
 		variableWidth: true,
 		appendDots: '.slick__container--index',
+		appendArrows: '.slick__container--index__arrow',
 		responsive: [
 			{
 				breakpoint: 1024,
