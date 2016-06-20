@@ -5,11 +5,62 @@
 		"tag":"LIFESTYLE",
 		"icon":"lifestyle-white.png",
 		"title":"How to deal with uncertainty",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/static1.squarespace.png",
+		"text": [
+			{
+				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"food",
+		"tag":"FOOD",
+		"icon":"food-white.png",
+		"title":"Recipe: Breakfast Burrito",
+		"background":"/images/breakfast-burrito.jpg",
 		"author": [
 			{
-				"image": "binge-habit1.jpg",
-				"name": "EMILY BARKER"
+				"image": "98876430_8.jpg",
+				"name": "SUZANNE HEYN"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa enim!"
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"Exercise tip: Take the dogs out",
+		"background":"/images/Buddies.jpg",
+		"author": [
+			{
+				"image": "88693176_8.jpg",
+				"name": "TODD McCULLOUGH"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"lifestyle-white.png",
+		"title":"We're all busy, but don't neglect your girlfriends",
+		"background":"/images/two-girls-walking-arm-in-arm.jpg",
+		"author": [
+			{
+				"image": "88068133_8.jpg",
+				"name": "EVA HERSHAW"
 			}
 		],
 		"text": [
@@ -24,11 +75,43 @@
 		"tag":"LIFESTYLE",
 		"icon":"lifestyle-white.png",
 		"title":"How to deal with uncertainty",
-		"background":"/images/placeholder.jpg",
+		"background":"/images/static1.squarespace.png",
+		"text": [
+			{
+				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"food",
+		"tag":"FOOD",
+		"icon":"food-white.png",
+		"title":"Recipe: Breakfast Burrito",
+		"background":"/images/breakfast-burrito.jpg",
 		"author": [
 			{
-				"image": "binge-habit1.jpg",
-				"name": "EMILY BARKER"
+				"image": "98876430_8.jpg",
+				"name": "SUZANNE HEYN"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa enim!"
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"Exercise tip: Take the dogs out",
+		"background":"/images/Buddies.jpg",
+		"author": [
+			{
+				"image": "88693176_8.jpg",
+				"name": "TODD McCULLOUGH"
 			}
 		],
 		"text": [
@@ -42,126 +125,12 @@
 		"category":"lifestyle",
 		"tag":"LIFESTYLE",
 		"icon":"lifestyle-white.png",
-		"title":"How to deal with uncertainty",
-		"background":"/images/placeholder.jpg",
+		"title":"We're all busy, but don't neglect your girlfriends",
+		"background":"/images/two-girls-walking-arm-in-arm.jpg",
 		"author": [
 			{
-				"image": "binge-habit1.jpg",
-				"name": "EMILY BARKER"
-			}
-		],
-		"text": [
-			{
-				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
-			}
-		]
-	},
-	{
-		"type":"article--small--half",
-		"category":"lifestyle",
-		"tag":"LIFESTYLE",
-		"icon":"lifestyle-white.png",
-		"title":"How to deal with uncertainty",
-		"background":"/images/placeholder.jpg",
-		"author": [
-			{
-				"image": "binge-habit1.jpg",
-				"name": "EMILY BARKER"
-			}
-		],
-		"text": [
-			{
-				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
-			}
-		]
-	},
-	{
-		"type":"article--small--half",
-		"category":"lifestyle",
-		"tag":"LIFESTYLE",
-		"icon":"lifestyle-white.png",
-		"title":"How to deal with uncertainty",
-		"background":"/images/placeholder.jpg",
-		"author": [
-			{
-				"image": "binge-habit1.jpg",
-				"name": "EMILY BARKER"
-			}
-		],
-		"text": [
-			{
-				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
-			}
-		]
-	},
-	{
-		"type":"article--small--half",
-		"category":"lifestyle",
-		"tag":"LIFESTYLE",
-		"icon":"lifestyle-white.png",
-		"title":"How to deal with uncertainty",
-		"background":"/images/placeholder.jpg",
-		"author": [
-			{
-				"image": "binge-habit1.jpg",
-				"name": "EMILY BARKER"
-			}
-		],
-		"text": [
-			{
-				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
-			}
-		]
-	},
-	{
-		"type":"article--small--half",
-		"category":"lifestyle",
-		"tag":"LIFESTYLE",
-		"icon":"lifestyle-white.png",
-		"title":"How to deal with uncertainty",
-		"background":"/images/placeholder.jpg",
-		"author": [
-			{
-				"image": "binge-habit1.jpg",
-				"name": "EMILY BARKER"
-			}
-		],
-		"text": [
-			{
-				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
-			}
-		]
-	},
-	{
-		"type":"article--small--half",
-		"category":"lifestyle",
-		"tag":"LIFESTYLE",
-		"icon":"lifestyle-white.png",
-		"title":"How to deal with uncertainty",
-		"background":"/images/placeholder.jpg",
-		"author": [
-			{
-				"image": "binge-habit1.jpg",
-				"name": "EMILY BARKER"
-			}
-		],
-		"text": [
-			{
-				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
-			}
-		]
-	},
-	{
-		"type":"article--small--half",
-		"category":"lifestyle",
-		"tag":"LIFESTYLE",
-		"icon":"lifestyle-white.png",
-		"title":"How to deal with uncertainty",
-		"background":"/images/placeholder.jpg",
-		"author": [
-			{
-				"image": "binge-habit1.jpg",
-				"name": "EMILY BARKER"
+				"image": "88068133_8.jpg",
+				"name": "EVA HERSHAW"
 			}
 		],
 		"text": [
