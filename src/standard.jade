@@ -91,7 +91,7 @@ block content
 										if val.author
 											div.article__author__container
 												if val.author[0].image
-													div.article__author__img(style="background-image:url('#{val.author[0].image}')")
+													div.article__author__img(style="background-image:url('/images/#{val.author[0].image}')")
 													div.article__author__name #{val.author[0].name}
 												else
 													div.article__author__name WITH #{val.author[0].name}
