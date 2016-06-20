@@ -16,9 +16,11 @@
             height: 285px;
             width: 100vw;
             outline: none;
+            padding: 0 10px;
 
             @include mq(large){
                 height: 700px;
+                padding: 0;
             }
 
             @include mq(xlarge){
