@@ -3,21 +3,27 @@ mixin footer(spec)
 	- spec.__class = spec.__class || ''
 
 	div.footer__container--light
-		div.row
-			div.columns.large-3
-				img.footer__ald(src="/images/ALD-logo-f.png", alt="logo")
-			div.columns.large-4.large-offset-5
+		div.row.small-collapse.large-uncollapse
+			div.columns.large-4.large-offset-5.large-push-3
 				div.footer__social
-					a(href="#")
+					a(href="#").show-for-large
 						img(src="/images/facebook-f.png", alt="facebook icon")
-					a(href="#")
+					a(href="#").show-for-large
 						img(src="/images/instagram-F.png", alt="instagram icon")
-					a(href="#")
+					a(href="#").show-for-large
 						img(src="/images/twitter-f.png", alt="twitter icon")
-					a(href="#")
+					a(href="#").show-for-large
 						img(src="/images/pinterest-f.png", alt="pinterest icon")
-					a(href="#")
+					a(href="#").show-for-large
 						img(src="/images/rss-f.png", alt="rss icon")
+					a(href="#").hide-for-large
+						img(src="/images/facebook-f-mobile.png", alt="facebook icon")
+					a(href="#").hide-for-large
+						img(src="/images/instagram-f-mobile.png", alt="instagram icon")
+					a(href="#").hide-for-large
+						img(src="/images/twitter-f-mobile.png", alt="twitter icon")
+			div.columns.large-3.large-pull-9
+				img.footer__ald(src="/images/ALD-logo-f.png", alt="logo")
 		div.row
 			div.columns.large-3
 				div.footer__container--light__text Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.

@@ -414,6 +414,13 @@
 	// {{article__more}}
 	&__more{
 		cursor: pointer;
+		width: 100px;
+		margin-top: 40px;
+
+		@include mq(large){
+			width: auto;
+			margin-top: 0;
+		}
 
 		// {{article__more__container}}
 		&__container{

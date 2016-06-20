@@ -5,10 +5,13 @@ mixin subscribe(spec)
 	div.subscribe__container
 		div.row
 			div.columns.large-7.large-centered
+				div.subscribe__icon__container.hide-for-large
+					img.subscribe__icon(src='/images/newsletter-pop.png')
 				div.subscribe__title Subscribe to our newsletter
 				div.subscribe__text Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet direct to your inbox, for busy people.
-				div.subscribe__text--bold I'm interested in
-				form.subscribe__form(action="/", method="post")
+				div.subscribe__text--bold.show-for-large I'm interested in
+				div.subscribe__mobile__btn.hide-for-large Subscribe here
+				form.subscribe__form.show-for-large(action="/", method="post")
 					div.subscribe__checkbox__container
 						input.subscribe__checkbox#subscribe-fitness(type='checkbox', name='subscribe-checkbox')
 						label.subscribe__checkbox__label(for='subscribe-fitness')

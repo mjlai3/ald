@@ -1,20 +1,30 @@
 .standard{
 
+	// {{standard__img}}
 	&__img{
 		width: 100%;
 
+		// {{standard__img__container}}
 		&__container{
 			position: relative;
 		}
 
+		// {{standard__img__text}}
 		&__text{
 			@include m-color('white');
 			@include font('Breakers-Bold');
 			position: absolute;
 			top: 0;
 			left: 0;
-			padding: 10px;
-			width: 100px;
+			width: 55px;
+			font-size: 12px;
+			text-align: center;
+
+			@include mq(large){
+				font-size: inherit;
+				padding: 10px;
+				width: 100px;
+			}
 
 			.page--fitness &{
 				@include m-bgcolor('fitness');
@@ -22,12 +32,17 @@
 		}
 	}
 
+	// {{standard__content}}
 	&__content{
 
 		figure{
-			max-width: 50%;
-			margin: 0 20px 0 0;
 			float: left;
+			margin: 15px 0;
+
+			@include mq(large){
+				max-width: 50%;
+				margin: 0 20px 0 0;
+			}
 		}
 
 		figcaption{
@@ -37,13 +52,21 @@
 		}
 	}
 
+	// {{standard__title}}
 	&__title{
 		@include font('Breakers-Light');
 		@include m-color('article-black');
-		font-size: 42px;
 		line-height: 1;
-		margin: 35px 0;
+		margin: 20px 0 10px;
+		font-size: 28px;
 
+		@include mq(large){
+			text-transform: uppercase;
+			margin: 35px 0;
+			font-size: 42px;
+		}
+
+		// {{standard__title__container}}
 		&__container{
 			border-bottom: 1px solid grey;
 			margin-bottom: 5px;
@@ -54,17 +77,21 @@
 
 	}
 
+	// {{standard__read}}
 	&__read{
 
+		// {{standard__read__container}}
 		&__container{
 			display: flex;
 			align-items: center;
 		}
 
+		// {{standard__read__icon}}
 		&__icon{
 			margin-right: 5px;
 		}
 
+		// {{standard__read__text}}
 		&__text{
 			@include font('Breakers-Regular');
 			@include m-color('article-author');
@@ -72,13 +99,19 @@
 		}
 	}
 
+	// {{standard__stats}}
 	&__stats{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 50px;
+		margin-bottom: 15px;
+
+		@include mq(large){
+			margin-bottom: 50px;
+		}
 	}
 
+	// {{standard__comments}}
 	&__comments{
 		@include font('Breakers-Regular');
 		@include m-color('article-author');
@@ -86,6 +119,7 @@
 		font-size: 18px;
 		padding: 0 12px;
 
+		// {{standard__comments--view}}
 		&--view{
 			@include m-color('article-author');
 			@include font('Breakers-Regular');
@@ -104,8 +138,10 @@
 		}
 	}
 
+	// {{standard__pattern}}
 	&__pattern{
 
+		// {{standard__pattern__container}}
 		&__container{
 			background-size: 20%;
 		}

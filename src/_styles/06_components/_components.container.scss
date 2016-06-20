@@ -1,6 +1,10 @@
 .container{
 
 	&--standard{
-		margin-top: 200px;
+		margin-top: 101px;
+
+		@include mq(large){
+			margin-top: 200px;
+		}
 	}
 }

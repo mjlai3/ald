@@ -120,7 +120,37 @@
 	&__title{
 		@include m-color('white');
 		@include font('breakers-regular');
-		font-size: 36px;
+		font-size: 27px;
 		margin-bottom: 10px;
+		line-height: 1;
+
+		@include mq(large){
+			font-size: 36px;
+		}
+	}
+
+	// {{subscribe__icon}}
+	&__icon{
+		width: 35px;
+
+		&__container{
+			margin-bottom: 25px;
+		}
+	}
+
+	// {{subscribe__mobile}}
+	&__mobile{
+
+		&__btn{
+			@include m-bgcolor('white');
+			@include font('Breakers-Regular');
+			font-size: 20px;
+			border: 1px solid grey;
+			padding: 10px;
+			border-radius: 30px;
+			max-width: 200px;
+			margin: 0 auto;
+			cursor: pointer;
+		}
 	}
 }

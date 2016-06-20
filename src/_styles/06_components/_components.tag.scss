@@ -1,14 +1,21 @@
 .tag{
 
+	// {{tag__container}}
 	&__container{
 		clear: both;
-		margin-top: 85px;
+		margin-top: 40px;
+
+		@include mq(large){
+			margin-top: 85px;
+		}
 	}
 
+	// {{tag__list}}
 	&__list{
 		list-style-type: none;
 		margin: 0;
 
+		// {{tag__list__enclosure}}
 		&__enclosure{
 			@include font('Breakers-Light');
 			display: inline;

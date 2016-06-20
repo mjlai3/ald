@@ -5,7 +5,11 @@
 
 		// {{footer__container--light}}
 		&--light{
-			padding: 70px 0 50px;
+			padding: 0 0 50px;
+
+			@include mq(large){
+				padding: 70px 0 50px;
+			}
 
 			// {{footer__container--light__list}}
 			&__list{
@@ -49,23 +53,37 @@
 
 			// {{footer__container--dark-left}}
 			&-left{
-				display: flex;
+				text-align: center;
+				padding: 25px 0;
+
+				@include mq(large){
+					display: flex;
+					padding: 0;
+				}
 			}
 
 			// {{footer__container--dark-right}}
 			&-right{
 				display: flex;
-				justify-content: flex-end;
+				justify-content: center;
 				align-items: center;
 				margin-right: 16px;
+
+				@include mq(large){
+					justify-content: flex-end;
+				}
 			}
 
 			// {{footer__container--dark__text}}
 			&__text{
 				@include m-color('footer-dark--text');
 				@include font('Breakers-Light');
-				padding: 25px 0;
 				font-size: 14px;
+
+				@include mq(large){
+					padding: 25px 0;
+				}
+
 				&:nth-child(1n+2){
 					margin-left: 10px;
 				}
@@ -88,9 +106,17 @@
 
 	// {{footer__social}}
 	&__social{
+		@include m-bgcolor('subscribe-grey');
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0 40px;
+		padding: 20px;
+		margin-bottom: 40px;
+
+		@include mq(large){
+			background-color: transparent;
+			padding: 0 40px;
+			margin-bottom: 0;
+		}
 	}
 }

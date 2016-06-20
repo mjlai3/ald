@@ -5,12 +5,17 @@ $jointhediscussionheight: 40px;
 	// {{author__container}}
 	&__container{
 		position: relative;
-		display: flex;
-		align-items: flex-start;
 		border-top: 1px solid #999999;
 		border-bottom: 1px solid #999999;
 		padding: 30px 0;
 		margin: 40px 0;
+		text-align: center;
+
+		@include mq(large){
+			display: flex;
+			align-items: flex-start;
+			text-align: left;
+		}
 	}
 
 	// {{author__img}}
@@ -18,11 +23,21 @@ $jointhediscussionheight: 40px;
 
 		// {{author__img__container}}
 		&__container{
-			height: 150px;
-			width: 150px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 120px;
+			width: 120px;
 			border: 1px solid #999999;
 			border-radius: 50%;
 			flex-shrink: 0;
+			margin: 0 auto 10px;
+
+			@include mq(large){
+				height: 150px;
+				width: 150px;
+				margin: 0;
+			}
 		}
 	}
 
@@ -77,7 +92,12 @@ $jointhediscussionheight: 40px;
 
 	// {{author__info}}
 	&__info{
-		margin-left: 20px;
+		text-align: left;
+		margin: 0 0 50px 0;
+
+		@include mq(large){
+			margin: 0 0 0 20px;
+		}
 	}
 
 	// {{author__social}}
@@ -100,7 +120,11 @@ $jointhediscussionheight: 40px;
 	&__text{
 		@include font('Breakers-Light');
 		@include m-color('paragraph');
-		font-size: 18px;
+		font-size: 16px;
 		margin-bottom: 15px;
+
+		@include mq(large){
+			font-size: 18px;
+		}
 	}
 }
