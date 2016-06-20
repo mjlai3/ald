@@ -46,18 +46,19 @@
             right: 25px;
         }
         .slick-prev:before, .slick-next:before {
-            font-size: 70px;
-            opacity: 0.9;
+            opacity: 1;
         }
 
         // Left Arrow
         .slick-next:before{
             margin-left: -685px;
+            content: url('/images/hero-arrow.png');
         }
 
         // Right Arrow
         .slick-prev:before {
             margin-left: 315px;
+            content: url('/images/hero-arrow-left.png');
         }
 
         // Container that holds all dots
