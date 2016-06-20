@@ -6,15 +6,15 @@
  * Customize the background color to match your design.
  */
 
- a{
+a{
  	@include m-color('link');
  	&:hover,&:focus{
  		@include m-color('link');
  		text-decoration: underline;
  	}
- }
+}
 
- p{
+p{
  	@include font('Breakers-Light');
  	@include m-color('paragraph');
  	font-size: 16px;
@@ -26,7 +26,12 @@
  	&:last-child{
  		margin-bottom: 0;
  	}
- }
+}
+
+html, body{
+	height: auto;
+	position: relative;
+}
 
 /*::-moz-selection {
     background: #b3d4fc;
