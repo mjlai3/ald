@@ -78,8 +78,15 @@
 
         .slick-slide {
             @include m-color('white');
+            opacity: 0.5;
             //padding: 40px 0;
             //text-align: center;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+
+            &.slick-center{
+                opacity: 1;
+            }
         }
         .slick-prev {
             left: 25px;
