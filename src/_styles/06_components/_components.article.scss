@@ -76,8 +76,6 @@
 				align-items: center;
 				height: 20px;
 				width: 60px;
-				transition: all 0.3s ease-in-out;
-				-webkit-transition: all 0.3s ease-in-out;
 
 				@include mq(medium){
 					width: 80px;
