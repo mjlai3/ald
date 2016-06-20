@@ -37,6 +37,11 @@
 				@include font('Breakers-Regular');
 				@include m-color('footer-black');
 				font-size: 16px;
+				margin-left: 20px;
+
+				@include mq(large){
+					margin-left: 0;
+				}
 			}
 
 			// {{footer__container--light__title}}
@@ -68,9 +73,11 @@
 				justify-content: center;
 				align-items: center;
 				margin-right: 16px;
+				margin-bottom: 25px;
 
 				@include mq(large){
 					justify-content: flex-end;
+					margin-bottom: 0;
 				}
 			}
 
@@ -97,11 +104,21 @@
 	// {{footer__ald}}
 	&__ald{
 		margin-bottom: 20px;
+		margin-left: 30px;
+
+		@include mq(large){
+			margin-left: 0;
+		}
 	}
 
 	// {{footer__legendairy}}
 	&__legendairy{
 		margin-top: 45px;
+		margin-left: 15px;
+
+		@include mq(large){
+			margin-left: 0;
+		}
 	}
 
 	// {{footer__social}}

@@ -7,6 +7,8 @@
 		// {{standard__img__container}}
 		&__container{
 			position: relative;
+			max-height: 480px;
+			overflow: hidden;
 		}
 
 		// {{standard__img__text}}
