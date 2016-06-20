@@ -1,0 +1,119 @@
+[
+	{
+		"grid":"grid-item-5",
+		"type":"article--small--full",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"Why group training pays off better in the long run",
+		"background":"/images/unnamed-1-1.jpg",
+		"author": [
+			{
+				"name": "OSHAY KEY"
+			}
+		]
+	},
+	{
+		"grid":"grid-item-6",
+		"type":"article--small--full",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"lifestyle-white.png",
+		"title":"Getting more done with focused work",
+		"background":"/images/blogging.jpg",
+		"author": [
+			{
+				"name": "EMILY BARKER"
+			}
+		],
+		"showForLarge":"show-for-large"
+	},
+	{
+		"grid":"grid-item-6",
+		"type":"article--small--full",
+		"category":"food",
+		"tag":"FOOD",
+		"icon":"food-white.png",
+		"title":"The one pan meal",
+		"background":"/images/farmers-frittata-paleo-the-whole-daily.jpg",
+		"author": [
+			{
+				"name": "SUZANNE HEYN"
+			}
+		],
+		"showForLarge":"show-for-large"
+	},
+	{
+		"grid":"grid-item-7",
+		"type":"article--small--full",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"lifestyle-white.png",
+		"title":"You'll never be \"ready\", so stop waiting",
+		"background":"/images/Skins-A200-This-Canberran-Life-Eat-Pray-Workout-5-1024x682.jpg",
+		"author": [
+			{
+				"name": "EMILY BARKER"
+			}
+		]
+	},
+	{
+		"grid":"grid-item-6",
+		"type":"article--small--full",
+		"category":"food",
+		"tag":"FOOD",
+		"icon":"food-white.png",
+		"title":"Recipe: Strawberry and blueberry cake",
+		"background":"/images/Lemon-and-blueberry-drizzle-cake.jpg",
+		"author": [
+			{
+				"name": "SUZANNE HEYN"
+			}
+		],
+		"showForLarge":"show-for-large"
+	},
+	{
+		"grid":"grid-item-7",
+		"type":"article--small--full",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"lifestyle-white.png",
+		"title":"Books to unwind to this week",
+		"background":"/images/640x960xff3.jpg.pagespeed.ic.iY6ax4Sc65.jpg",
+		"author": [
+			{
+				"name": "OASHAY KEY"
+			}
+		]
+	},
+	{
+		"grid":"grid-item-7",
+		"type":"article--small--full",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"Swimming, not skinny-dipping",
+		"background":"/images/10294420724_0300cf921d_o.jpg",
+		"author": [
+			{
+				"name": "SUZANNE HEYN"
+			}
+		],
+		"showForLarge":"show-for-large"
+	},
+	{
+		"grid":"grid-item-6",
+		"type":"article--small--full",
+		"category":"lifestyle",
+		"tag":"LIFESTYLE",
+		"icon":"lifestyle-white.png",
+		"title":"Having balance in the family",
+		"background":"/images/Summit-Fitzroy-Island-Walk-1024x682.jpg",
+		"author": [
+			{
+				"name": "TODD McCULLOUGH"
+			}
+		],
+		"showForLarge":"show-for-large"
+	}
+]

@@ -6,6 +6,7 @@
         padding: 115px 0 25px; // padding top for more space for header 
         background-size: 20%;
         overflow: hidden;
+        pointer-events: auto;
 
         @include mq(large){
             padding: 235px 0 35px; // padding top for more space for header 
@@ -31,6 +32,7 @@
         // {{slick__container--index__container}}
         &__container{
             position: relative;
+            pointer-events: none;
         }
 
         // {{slick__container--index__arrow}}
@@ -49,6 +51,7 @@
                 bottom: 0;
 
                 .slick-prev{
+                    pointer-events: auto;
                     margin-top: 40px;
                     left: -40px;
 
@@ -58,6 +61,7 @@
                 }
 
                 .slick-next{
+                    pointer-events: auto;
                     margin-top: 40px;
                     right: 26px;
 

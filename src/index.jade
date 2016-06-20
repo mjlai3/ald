@@ -5,7 +5,7 @@ block content
 		div.slick__container--index__container
 			div.slick__container--index(style="background-image: url('/images/pattern.png');")
 				div.slick__container--index__frame
-					each val in site.data.articlesslick
+					each val in site.data.articlesslick1
 						- var grid = (val.grid === undefined ? '' : val.grid)
 						- var showForLarge = (val.showForLarge === undefined ? '' : val.showForLarge)
 						div.grid-item--slick(class="#{grid} #{showForLarge} #{val.type} #{val.category}")
@@ -28,9 +28,78 @@ block content
 										if val.text
 											each paragraph in val.text
 												p.article__text #{paragraph.paragraph}
-				div.slick__container--index__frame 2
-				div.slick__container--index__frame 3
-				div.slick__container--index__frame 4
+				div.slick__container--index__frame
+					each val in site.data.articlesslick2
+						- var grid = (val.grid === undefined ? '' : val.grid)
+						- var showForLarge = (val.showForLarge === undefined ? '' : val.showForLarge)
+						div.grid-item--slick(class="#{grid} #{showForLarge} #{val.type} #{val.category}")
+							a.article__link(href="#")
+								div.article__img(style="background-image:url('#{val.background}')")
+									div.article__tag__container--outer
+										div.article__tag__container--inner
+											img.article__icon(src="/images/#{val.icon}")
+											div.article__tag #{val.tag}
+								div.article__text__container--outer
+									div.article__text__container--inner
+										h2.article__title #{val.title}
+										if val.author
+											div.article__author__container.show-for-large
+												if val.author[0].image
+													div.article__author__img(style="background-image:url('/images/#{val.author[0].image}')")
+													div.article__author__name #{val.author[0].name}
+												else
+													div.article__author__name <small>WITH</small> #{val.author[0].name}
+										if val.text
+											each paragraph in val.text
+												p.article__text #{paragraph.paragraph}
+				div.slick__container--index__frame
+					each val in site.data.articlesslick3
+						- var grid = (val.grid === undefined ? '' : val.grid)
+						- var showForLarge = (val.showForLarge === undefined ? '' : val.showForLarge)
+						div.grid-item--slick(class="#{grid} #{showForLarge} #{val.type} #{val.category}")
+							a.article__link(href="#")
+								div.article__img(style="background-image:url('#{val.background}')")
+									div.article__tag__container--outer
+										div.article__tag__container--inner
+											img.article__icon(src="/images/#{val.icon}")
+											div.article__tag #{val.tag}
+								div.article__text__container--outer
+									div.article__text__container--inner
+										h2.article__title #{val.title}
+										if val.author
+											div.article__author__container.show-for-large
+												if val.author[0].image
+													div.article__author__img(style="background-image:url('/images/#{val.author[0].image}')")
+													div.article__author__name #{val.author[0].name}
+												else
+													div.article__author__name <small>WITH</small> #{val.author[0].name}
+										if val.text
+											each paragraph in val.text
+												p.article__text #{paragraph.paragraph}
+				div.slick__container--index__frame
+					each val in site.data.articlesslick4
+						- var grid = (val.grid === undefined ? '' : val.grid)
+						- var showForLarge = (val.showForLarge === undefined ? '' : val.showForLarge)
+						div.grid-item--slick(class="#{grid} #{showForLarge} #{val.type} #{val.category}")
+							a.article__link(href="#")
+								div.article__img(style="background-image:url('#{val.background}')")
+									div.article__tag__container--outer
+										div.article__tag__container--inner
+											img.article__icon(src="/images/#{val.icon}")
+											div.article__tag #{val.tag}
+								div.article__text__container--outer
+									div.article__text__container--inner
+										h2.article__title #{val.title}
+										if val.author
+											div.article__author__container.show-for-large
+												if val.author[0].image
+													div.article__author__img(style="background-image:url('/images/#{val.author[0].image}')")
+													div.article__author__name #{val.author[0].name}
+												else
+													div.article__author__name <small>WITH</small> #{val.author[0].name}
+										if val.text
+											each paragraph in val.text
+												p.article__text #{paragraph.paragraph}
 			div.slick__container--index__arrow__container
 				div.slick__container--index__arrow
 		div.row.show-for-large
