@@ -48,10 +48,18 @@
 	&__tag{
 		@include font('Breakers-Bold');
 		font-size: 12px;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
 
-		@include mq(large){
+		@include mq(medium){
 			@include font('Breakers-Black');
 			font-size: 16px;
+		}
+
+		.grid-item-6 &{
+			@include mq(large){
+				font-size: 12px;
+			}
 		}
 		
 		//{{article__tag__container}}
@@ -68,6 +76,13 @@
 				align-items: center;
 				height: 20px;
 				width: 60px;
+				transition: all 0.3s ease-in-out;
+				-webkit-transition: all 0.3s ease-in-out;
+
+				@include mq(medium){
+					width: 80px;
+					height: 25px;
+				}
 
 				.article--full &{
 					@include mq(large){
@@ -106,6 +121,14 @@
 						width: 25%;
 						height: 30px;
 					}
+				}
+
+				.grid-item-5 &, .grid-item-7 &{
+					width: 80px;
+				}
+
+				.grid-item-6 &{
+					width: 60px;
 				}
 
 				.lifestyle &{
@@ -329,13 +352,12 @@
 		}
 		.article--small--full.grid-item-6 &{
 			@include font('Breakers-Regular');
-			font-size: 20px;
-			font-size: 15px;
 			margin-bottom: 0;
+			font-size: 15px;
 
 			@include mq(large){
-				font-size: 34px;
 				margin-bottom: 8px;
+				font-size: 20px;
 			}
 		}
 		.article--small--full.grid-item-7 &{
@@ -358,6 +380,16 @@
 			display: flex;
 			align-items: center;
 			margin-bottom: 10px;
+
+			.article--small--full.grid-item-5 &{
+				margin-bottom: 0;
+			}
+			.article--small--full.grid-item-6 &{
+				margin-bottom: 0;
+			}
+			.article--small--full.grid-item-7 &{
+				margin-bottom: 0;
+			}
 		}
 
 		//{{article__author__img}}

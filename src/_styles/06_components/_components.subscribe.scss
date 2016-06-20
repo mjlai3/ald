@@ -77,7 +77,7 @@
 	// {{subscribe__input}}
 	&__input{
 		@include font('Breakers-Regular');
-		font-size: 21px;
+		font-size: 17px;
 		padding: 15px 25px;
 		border-bottom-left-radius: 5px;
 		border-top-left-radius: 5px;
@@ -86,6 +86,11 @@
 		box-shadow: none;
 		border-right: none;
 		outline: none;
+		transition: all 0.3s ease-in-out;
+
+		@include mq(xxlarge){
+			font-size: 21px;
+		}
 
 		&::-webkit-input-placeholder{
 			@include m-color('subscribe-placeholder');
@@ -109,10 +114,16 @@
 		border-top-right-radius: 5px;
 		border: 1px solid grey;
 		cursor: pointer;
-		font-size: 21px;
+		font-size: 17px;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+
+		@include mq(xxlarge){
+			font-size: 21px;
+		}
 
 		&:hover, &:focus{
-
+			@include m-bgcolor('subscribe-btn-hover');
 		}
 	}
 

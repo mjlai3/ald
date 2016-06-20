@@ -130,6 +130,10 @@
 		padding: 20px;
 		margin-bottom: 40px;
 
+		@include mq(medium){
+			padding: 20px 30%;
+		}
+
 		@include mq(large){
 			background-color: transparent;
 			padding: 0 40px;
