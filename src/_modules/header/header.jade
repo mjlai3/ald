@@ -20,8 +20,9 @@ mixin header(spec)
 							a(href="#")
 								img.header__instagram(src="/images/instagram.png", alt="instagram")
 								img.header__instagram-white(src="/images/instagram-white.png", alt="instagram")
-							img.header__subscribe(src="/images/subscribe.png", alt="subscribe")
-							img.header__subscribe-white(src="/images/subscribe-white.png", alt="subscribe")
+							a.header__subscribe__link
+								img.header__subscribe(src="/images/subscribe.png", alt="subscribe")
+								img.header__subscribe-white(src="/images/subscribe-white.png", alt="subscribe")
 						img.header__search(src="/images/search.png", alt="search")
 	div.mobile__menu
 		div.mobile__menu__close__container
@@ -56,3 +57,29 @@ mixin header(spec)
 				form.mobile__search__form
 					input.mobile__search__input(placeholder="I'm looking for...")
 					input.mobile__search__submit(type="submit" value='.')
+	div.mobile__subscribe.mobile__subscribe__container--outer
+		div.mobile__subscribe__container--center
+			div.mobile__subscribe__container--inner
+				div.subscribe__icon__container
+					img.subscribe__icon(src='/images/newsletter-pop.png')
+				div.subscribe__title Subscribe to our newsletter
+				div.subscribe__text Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet direct to your inbox, for busy people.
+				div.subscribe__text--bold.show-for-large I'm interested in
+				div.subscribe__mobile__btn.hide-for-large Subscribe here
+				form.subscribe__form.show-for-large(action="/", method="post")
+					div.subscribe__checkbox__container
+						input.subscribe__checkbox#subscribe-fitness(type='checkbox', name='subscribe-checkbox')
+						label.subscribe__checkbox__label(for='subscribe-fitness')
+							span.subscribe__checkbox__span
+							| Fitness
+						input.subscribe__checkbox#subscribe-lifestyle(type='checkbox', name='subscribe-checkbox')
+						label.subscribe__checkbox__label(for='subscribe-lifestyle')
+							span.subscribe__checkbox__span
+							| Lifestyle
+						input.subscribe__checkbox#subscribe-food(type='checkbox', name='subscribe-checkbox')
+						label.subscribe__checkbox__label(for='subscribe-food')
+							span.subscribe__checkbox__span
+							| Food
+					div.subscribe__input__container
+						input.subscribe__input(placeholder="Your email...")
+						div.subscribe__submit Submit

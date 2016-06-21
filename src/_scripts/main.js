@@ -169,10 +169,17 @@ $(() => {
 		$('.mobile__search__container--outer').fadeToggle();
 	});
 
+	// Mobile Subscribe Toggle
+	$('.header__subscribe__link').click(function(){
+		$('.overlay').fadeToggle();
+		$('.mobile__subscribe__container--outer').fadeToggle();
+	});
+
 	// Toggle when overlay is clicked
 	$('.overlay').click(function(){
 		$('.mobile__search__container--outer').fadeOut();
 		$('.mobile__menu').fadeOut();
+		$('.mobile__subscribe__container--outer').fadeOut();
 		$(this).fadeOut();
 	});
 

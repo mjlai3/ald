@@ -162,4 +162,42 @@
 			flex-shrink: 0;
 		}
 	}
+
+	// {{mobile__subscribe}}
+	&__subscribe{
+		
+		&__container{
+
+			// {{mobile__subscribe__container--outer}}
+			&--outer{
+				@include m-zindex('mobile-subscribe');
+			    display: none;
+			    position: fixed;
+			}
+
+			// {{mobile__subscribe__container--outer}}
+			&--center{
+				display: flex;
+			    position: fixed;
+			    pointer-events: none;
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			}
+
+			// {{mobile__subscribe__container--inner}}
+			&--inner{
+				@include m-bgcolor('mobile-menu');
+				margin: auto;
+				overflow: hidden;
+				text-align: center;
+				pointer-events: auto;
+				max-width: 360px;
+				height: 480px;
+				padding: 30px 15px;
+				border-radius: 4px;
+			}
+		}
+	}
 }

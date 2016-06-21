@@ -40,7 +40,9 @@
 
 		// {{subscribe__checkbox__container}}
 		&__container{
-
+			.mobile__subscribe &{
+				padding-left: 110px;
+			}
 		}
 
 		// {{subscribe__checkbox__label}}
@@ -49,6 +51,11 @@
 			@include m-color('white');
 			@include font('Breakers-Regular');
 			font-size: 21px;
+
+			.mobile__subscribe &{
+				display: block;
+				text-align: left;
+			}
 		}
 
 		// {{subscribe__checkbox__span}}
@@ -71,6 +78,14 @@
 			@include font('Breakers-Light');
 			font-size: 21px;
 			font-weight: 600;
+
+			.mobile__subscribe &{
+				font-size: 18px;
+			}
+		}
+
+		.mobile__subscribe &{
+			font-size: 18px;
 		}
 	}
 
@@ -94,6 +109,11 @@
 
 		&::-webkit-input-placeholder{
 			@include m-color('subscribe-placeholder');
+		}
+
+		.mobile__subscribe &{
+			font-size: 18px;
+			padding: 10px;
 		}
 
 		// {{subscribe__input__container}}
@@ -125,6 +145,11 @@
 		&:hover, &:focus{
 			@include m-bgcolor('subscribe-btn-hover');
 		}
+
+		.mobile__subscribe &{
+			font-size: 18px;
+			padding: 10px;
+		}
 	}
 
 	// {{subscribe__title}}
@@ -138,12 +163,17 @@
 		@include mq(large){
 			font-size: 36px;
 		}
+
+		.mobile__subscribe &{
+			font-size: 28px;
+		}
 	}
 
 	// {{subscribe__icon}}
 	&__icon{
 		width: 35px;
 
+		// {{subscribe__icon__container}}
 		&__container{
 			margin-bottom: 25px;
 		}
