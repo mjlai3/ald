@@ -3,10 +3,10 @@
 	// {{mobile__menu}}
 	&__menu{
 		@include m-zindex('mobile-menu');
-	    background-image: url('/images/pattern-transparent.png');
+	    //background-image: url('/images/pattern-transparent.png');
 	    background-size: 75%;
 	    background-color: rgba(82, 154, 204, 1);
-	    //display: none;
+	    display: none;
 	    position: absolute;
 	    top: 0;
 	    bottom: 0;
@@ -47,6 +47,23 @@
 	    	&__container{
 	    		display: flex;
 	    		align-items: center;
+	    		padding: 10px 0;
+	    		margin-bottom: 10px;
+
+	    		&:hover, &:focus{
+	    			@include m-color('white');
+	    			text-decoration: none;
+	    		}
+
+	    		&.fitness{
+	    			@include m-bgcolor('fitness');
+	    		}
+	    		&.lifestyle{
+	    			@include m-bgcolor('lifestyle');
+	    		}
+	    		&.food{
+	    			@include m-bgcolor('food');
+	    		}
 	    	}
 
 	    	// {{mobile__menu__button__text}}
@@ -55,6 +72,22 @@
 	    		@include font('Breakers-Regular');
 	    		font-size: 32px;
 	    	}
+
+	    	// {{mobile__menu__button__icon}}
+	    	&__icon{
+
+	    		// {{mobile__menu__button__icon__container}}
+	    		&__container{
+	    			text-align: center;
+	    			width: 60px;
+	    		}
+	    	}
 	    }
+	}
+
+	&__line{
+		border-bottom: 1px solid f-color('white');
+		padding-bottom: 35px;
+		height: 1px;
 	}
 }

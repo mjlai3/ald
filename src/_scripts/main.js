@@ -146,7 +146,6 @@ $(() => {
 	else{
 		$('.header__right__container').width($('.header__menu__container').width())
 	}
-
 	$(window).resize(function(){
 		$('.header__right__container').css('width', 'auto');
 		$('.header__menu__container').css('width', 'auto');
@@ -156,6 +155,12 @@ $(() => {
 		else{
 			$('.header__right__container').width($('.header__menu__container').width())
 		}
+	});
+
+	// Mobile Menu Toggle
+	$('.mobile__menu__close__container, .header__menu__container').click(function(){
+		$('.overlay').toggle();
+		$('.mobile__menu').toggle();
 	});
 
 });

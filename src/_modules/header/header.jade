@@ -27,7 +27,26 @@ mixin header(spec)
 		div.mobile__menu__close__container
 			img.mobile__menu__close__icon(src='/images/menu-close.png')
 			div.mobile__menu__close__text Menu
-		div.mobile__menu__button__container
+		a.mobile__menu__button__container.fitness
 			div.mobile__menu__button__icon__container
 				img(src='/images/fitness-nav.png')
 			div.mobile__menu__button__text Fitness
+		a.mobile__menu__button__container.lifestyle
+			div.mobile__menu__button__icon__container
+				img(src='/images/lifestyle-nav.png')
+			div.mobile__menu__button__text Lifestyle
+		a.mobile__menu__button__container.food
+			div.mobile__menu__button__icon__container
+				img(src='/images/food-nav.png')
+			div.mobile__menu__button__text Food
+		a.mobile__menu__button__container
+			div.mobile__menu__button__icon__container
+				img(src='/images/a-nav.png')
+			div.mobile__menu__button__text Home
+		a.mobile__menu__button__container(href="#")
+			div.mobile__menu__button__icon__container
+			div.mobile__menu__button__text About
+		a.mobile__menu__button__container(href="#")
+			div.mobile__menu__button__icon__container
+			div.mobile__menu__button__text Contact
+		div.mobile__line
