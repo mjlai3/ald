@@ -23,19 +23,34 @@
 	    		display: flex;
 	    		align-items: center;
 	    		cursor: pointer;
-	    		margin: 75px 10px;
+	    		margin: 30px 10px;
+
+	    		@include mq(large){
+	    			margin: 75px 10px;
+	    		}
 	    	}
 
 	    	// {{mobile__menu__close__text}}
 	    	&__text{
 	    		@include m-color('white');
 	    		@include font('Breakers-Regular');
-	    		font-size: 28px;
+	    		font-size: 20px;
+
+	    		@include mq(large){
+	    			font-size: 28px;
+	    		}
 	    	}
 
 	    	// {{mobile__menu__close__icon}}
 	    	&__icon{
 	    		margin-right: 20px;
+	    		margin-left: 10px;
+	    		width: 25px;
+
+	    		@include mq(large){
+	    			margin-left: 0;
+	    			width: auto;
+	    		}
 	    	}
 	    }
 
@@ -46,8 +61,12 @@
 	    	&__container{
 	    		display: flex;
 	    		align-items: center;
-	    		padding: 10px 0;
+	    		padding: 7px 0;
 	    		margin-bottom: 10px;
+
+	    		@include mq(large){
+	    			padding: 10px 0;
+	    		}
 
 	    		&:hover, &:focus{
 	    			@include m-color('white');
@@ -69,7 +88,11 @@
 	    	&__text{
 	    		@include m-color('white');
 	    		@include font('Breakers-Regular');
-	    		font-size: 32px;
+	    		font-size: 23px;
+
+	    		@include mq(large){
+	    			font-size: 32px;
+	    		}
 	    	}
 
 	    	// {{mobile__menu__button__icon}}
@@ -78,7 +101,19 @@
 	    		// {{mobile__menu__button__icon__container}}
 	    		&__container{
 	    			text-align: center;
-	    			width: 60px;
+	    			width: 75px;
+
+	    			@include mq(large){
+	    				width: 60px;
+	    			}
+
+	    			img{
+	    				width: 35px;
+
+	    				@include mq(large){
+	    					width: auto;
+	    				}
+	    			}
 	    		}
 	    	}
 	    }
