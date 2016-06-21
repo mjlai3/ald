@@ -159,21 +159,21 @@ $(() => {
 
 	// Mobile Menu Toggle
 	$('.mobile__menu__close__container, .header__menu__container').click(function(){
-		$('.overlay').toggle();
-		$('.mobile__menu').toggle();
+		$('.overlay').fadeToggle();
+		$('.mobile__menu').fadeToggle();
 	});
 
 	// Mobile Search Toggle
 	$('.header__search').click(function(){
-		$('.overlay').toggle();
-		$('.mobile__search__container--outer').toggle();
+		$('.overlay').fadeToggle();
+		$('.mobile__search__container--outer').fadeToggle();
 	});
 
 	// Toggle when overlay is clicked
 	$('.overlay').click(function(){
-		$('.mobile__search__container--outer').hide();
-		$('.mobile__menu').hide();
-		$(this).hide();
+		$('.mobile__search__container--outer').fadeOut();
+		$('.mobile__menu').fadeOut();
+		$(this).fadeOut();
 	});
 
 });
