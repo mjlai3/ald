@@ -148,4 +148,31 @@
 			background-size: 20%;
 		}
 	}
+
+	// {{standard__social}}
+	&__social{
+
+		// {{standard__social__container}}
+		&__container{
+
+			// {{standard__social__container--outer}}
+			&--outer{
+				display: flex;
+				align-items: center;
+				height: 350px;
+				margin-left: 30px;
+			}
+
+			// {{standard__social__container--inner}}
+			&--inner{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 40px;
+				width: 120px;
+				border: 1px solid #59A0CC;
+				border-radius: 5px;
+			}
+		}
+	}
 }
