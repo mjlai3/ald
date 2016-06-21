@@ -11,7 +11,8 @@
 	    top: 0;
 	    bottom: 0;
 	    left: 0;
-	    width: 400px;
+	    right: 0;
+	    max-width: 400px;
 	    padding: 10px;
 
 	    // {{mobile__menu__close}}
@@ -100,14 +101,17 @@
 			&--outer{
 				@include m-bgcolor('mobile-menu');
 				@include m-zindex('mobile-search');
-				height: 200px;
-				@include m-zindex('mobile-menu');
+				height: 100px;
 			    background-color: rgba(82, 154, 204, 1);
 			    display: none;
 			    position: fixed;
 			    left: 0;
 			    right: 0;
 			    top: 0;
+
+			    @include mq(large){
+			    	height: 200px;
+			    }
 			}
 
 			// {{mobile__search__container--center}}
@@ -129,8 +133,11 @@
 		&__form{
 			display: flex;
 			width: 100%;
-			border-bottom: 1px solid white;
 			padding: 20px 0;
+
+			@include mq(large){
+				border-bottom: 1px solid white;
+			}
 		}
 
 		// {{mobile__search__input}}
@@ -140,9 +147,14 @@
 			border: none;
 			outline: none;
 			color: white;
-			padding: 0;
-			font-size: 42px;
+			padding: 0 10px;
+			font-size: 25px;
 			flex-grow: 1;
+
+			@include mq(xlarge){
+				padding: 0;
+				font-size: 42px;
+			}
 
 			&::-webkit-input-placeholder{
 	 			@include m-color('white');
