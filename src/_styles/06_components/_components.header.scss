@@ -75,7 +75,11 @@
 		transition: all 0.3s;
 
 		.headroom--pinned.headroom--not-top &{
-			margin-top: 65px;
+			margin-top: 0;
+
+			@include mq(large){
+				margin-top: 65px;
+			}
 		}
 
 		@include mq(large){
