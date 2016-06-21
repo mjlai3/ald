@@ -273,7 +273,15 @@
 					}
 				}
 
-				.article--small--full &{
+				// Make all slides have the white overlay to begin with
+				.slick-slide .article--small--full &{
+					background: rgba(255,255,255,0.5);
+					transition: all 1s ease-in-out;
+					-webkit-transition: all 1s ease-in-out;
+				}
+
+				// Then make the normal black overlay for the center slick slide
+				.article--small--full &, .slick-slide.slick-center .article--small--full &{
 					width: 100%;
 					height: 100%;
 					display: flex;
@@ -286,6 +294,8 @@
 					background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 					position: absolute;
+					transition: all 1s ease-in-out;
+					-webkit-transition: all 1s ease-in-out;
 				}
 
 				.article--small--half &{
