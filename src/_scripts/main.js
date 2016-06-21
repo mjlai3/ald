@@ -163,4 +163,17 @@ $(() => {
 		$('.mobile__menu').toggle();
 	});
 
+	// Mobile Search Toggle
+	$('.header__search').click(function(){
+		$('.overlay').toggle();
+		$('.mobile__search__container--outer').toggle();
+	});
+
+	// Toggle when overlay is clicked
+	$('.overlay').click(function(){
+		$('.mobile__search__container--outer').hide();
+		$('.mobile__menu').hide();
+		$(this).hide();
+	});
+
 });
