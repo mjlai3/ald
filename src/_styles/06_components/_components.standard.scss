@@ -159,20 +159,52 @@
 			&--outer{
 				display: flex;
 				align-items: center;
-				height: 350px;
+				height: 400px;
 				margin-left: 80px;
+			}
+
+			// {{standard__social__container--center}}
+			&__center{
+
 			}
 
 			// {{standard__social__container--inner}}
 			&--inner{
+				@include font('Breakers-Regular');
+				@include m-color('social');
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				height: 40px;
 				width: 120px;
-				border: 1px solid #59A0CC;
+				border: 1px solid f-color('social');
 				border-radius: 5px;
 				margin-bottom: 10px;
+
+				&:hover, &:focus{
+					@include m-color('white');
+					@include m-bgcolor('social');
+					text-decoration: none;
+
+					.standard__social__icon{
+						display: none;
+
+						&-white{
+							display: block;
+						}
+					}
+				}
+			}
+		}
+
+		// {{standard__social__icon}}
+		&__icon{
+			margin-right: 10px;
+
+			// {{standard__social__icon-white}}
+			&-white{
+				margin-right: 10px;
+				display: none;
 			}
 		}
 	}
