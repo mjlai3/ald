@@ -45,6 +45,7 @@
             // {{slick__container--index__arrow__container}}
             &__container{
                 position: absolute;
+                overflow: hidden;
                 top: 0;
                 right: 0;
                 left: 0;
@@ -52,8 +53,12 @@
 
                 .slick-prev{
                     pointer-events: auto;
-                    margin-top: 40px;
+                    margin-top: 70px;
                     left: -40px;
+
+                    // Fix for Firefox not being able to click 
+                    height: 80px;
+                    width: 76px;
 
                     &:before{
                         content: url('/images/hero-arrow-left.png');
@@ -62,8 +67,12 @@
 
                 .slick-next{
                     pointer-events: auto;
-                    margin-top: 40px;
-                    right: 26px;
+                    margin-top: 70px;
+                    right: -30px;
+
+                    // Fix for Firefox not being able to click 
+                    height: 80px;
+                    width: 76px;
 
                     &:before{
                         content: url('/images/hero-arrow.png');
@@ -114,7 +123,9 @@
 
         // The container for each dot
         .slick-dots li{
-            margin: 0 45px;
+            margin: 0 20px;
+            width: 60px;
+            height: 10px;
         }
 
         // All dots
