@@ -378,6 +378,14 @@
 				margin-bottom: 8px;
 			}
 		}
+
+		.slick__container--standard__frame &{
+			font-size: 24px;
+
+			@include mq(large){
+				font-size: 34px;
+			}
+		}
 	}
 
 	//{{article__author}}

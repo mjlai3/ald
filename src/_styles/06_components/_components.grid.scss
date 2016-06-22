@@ -37,6 +37,7 @@
 
 .grid-item--slick-standard {
 	@include m-bgcolor('article-grey');
+	height: 335px;
 	@include mq(large){
 		height: 480px;
 	}

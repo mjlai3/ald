@@ -157,12 +157,15 @@
 
         // {{slick__container--standard__frame}}
         &__frame{
-        	height: 480px;
+            height: 335px;
             outline: none;
-            padding: 0 20px;
+            padding: 0 5px;
+            width: 66vw;
 
             @include mq(large){
+                height: 480px;
                 width: 400px;
+                padding: 0 20px;
             }
         }
 
