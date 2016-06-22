@@ -1,7 +1,9 @@
 .filter{
 
+	// {{filter__container}}
 	&__container{
 
+		// {{filter__container--outer}}
 		&--outer{
 			display: flex;
 			align-items: center;
@@ -9,14 +11,27 @@
 			margin: 45px 0 40px;
 		}
 
+		// {{filter__container--inner}}
 		&--inner{
 			display: flex;
+			width: 100%;
+			max-width: 460px;
+			justify-content: space-between;
+
+			@include mq(large){
+				width: auto;
+				justify-content: flex-start;
+			}
 		}
 	}
 
+	// {{filter__button}}
 	&__button{
 		text-align: center;
-		margin: 0 25px;
+
+		@include mq(large){
+			margin: 0 25px;
+		}
 	}
 
 	// {{filter__checkbox}}

@@ -247,24 +247,4 @@
 			}
 		}
 	}
-
-	// {{mobile__filter}}
-	&__filter{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 75px;
-		background-color: #EEEEEE;
-		margin: 2px 0 20px;
-		cursor: pointer;
-
-		// {{mobile__filter__text}}
-		&__text{
-			@include font('Breakers-Regular');
-			font-size: 24px;
-			text-align: center;
-			color: #1a1a1a;
-			width: 100%;
-		}
-	}
 }
