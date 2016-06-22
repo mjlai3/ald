@@ -158,9 +158,15 @@ $(() => {
 	});
 
 	// Mobile Menu Toggle
-	$('.mobile__menu__close__container, .header__menu__container').click(function(){
-		$('.overlay').fadeToggle();
-		$('.mobile__menu').fadeToggle();
+	$('.header__menu__container').click(function(){
+		$('.overlay').fadeIn();
+		$('.mobile__menu').fadeIn();
+		$(this).css('visibility', 'hidden');
+	});
+	$('.mobile__menu__close__container').click(function(){
+		$('.overlay').fadeOut();
+		$('.mobile__menu').fadeOut();
+		$('.header__menu__container').css('visibility', 'visible');
 	});
 
 	// Mobile Search Toggle
@@ -180,6 +186,7 @@ $(() => {
 		$('.mobile__search__container--outer').fadeOut();
 		$('.mobile__menu').fadeOut();
 		$('.mobile__subscribe__container--outer').fadeOut();
+		$('.header__menu__container').css('visibility', 'visible');
 		$(this).fadeOut();
 	});
 

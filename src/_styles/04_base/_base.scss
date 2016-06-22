@@ -8,7 +8,7 @@
 
 a{
  	@include m-color('link');
- 	&:hover,&:focus{
+ 	&:hover{
  		@include m-color('link');
  		text-decoration: underline;
  	}

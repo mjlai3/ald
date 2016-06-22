@@ -55,7 +55,7 @@ mixin header(spec)
 		div.mobile__search__container--center
 			div.mobile__search__container--inner
 				form.mobile__search__form
-					input.mobile__search__input(placeholder="I'm looking for...")
+					input.mobile__search__input(placeholder="I am looking for..."  onfocus="this.placeholder = ''" onblur="this.placeholder = 'I am looking for...'")
 					input.mobile__search__submit(type="submit" value=' .')
 	div.mobile__subscribe.mobile__subscribe__container--outer
 		div.mobile__subscribe__container--center
@@ -81,5 +81,5 @@ mixin header(spec)
 							span.subscribe__checkbox__span
 							| Food
 					div.subscribe__input__container
-						input.subscribe__input(placeholder="Your email...")
+						input.subscribe__input(placeholder="Your email..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email...'")
 						div.subscribe__submit Submit

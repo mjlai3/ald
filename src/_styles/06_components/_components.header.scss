@@ -22,7 +22,7 @@
 		&__img{
 			margin-right: 17px;
 			width: 35px;
-			transition: all 0.3s ease-in-out;
+			transition: width 0.3s ease-in-out;
 
 			@include mq(large){
 				width: 53px;

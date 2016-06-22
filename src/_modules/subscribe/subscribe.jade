@@ -26,5 +26,5 @@ mixin subscribe(spec)
 							span.subscribe__checkbox__span
 							| Food
 					div.subscribe__input__container
-						input.subscribe__input(placeholder="Enter your email...")
+						input.subscribe__input(placeholder="Enter your email..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your email...'")
 						div.subscribe__submit Send me daily dash
