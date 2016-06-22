@@ -7,8 +7,10 @@
 		// {{standard__img__container}}
 		&__container{
 			position: relative;
-			max-height: 480px;
 			overflow: hidden;
+			display: flex;
+			align-items: center;
+			max-height: 480px;
 		}
 
 		// {{standard__img__text}}
@@ -41,7 +43,7 @@
 			float: left;
 			margin: 15px 0;
 
-			@include mq(large){
+			@include mq(medium){
 				max-width: 50%;
 				margin: 0 20px 0 0;
 			}
