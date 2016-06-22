@@ -22,9 +22,14 @@
 		&__img{
 			margin-right: 17px;
 			width: 35px;
+			transition: all 0.3s ease-in-out;
 
 			@include mq(large){
-				width: auto;
+				width: 53px;
+
+				.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned &, .headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned &{
+					width: 37px;
+				}
 			}
 		}
 
