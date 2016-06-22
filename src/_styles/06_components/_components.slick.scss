@@ -162,7 +162,7 @@
             padding: 0 5px;
             width: 66vw;
 
-            @include mq(large){
+            @include mq(medium){
                 height: 480px;
                 width: 400px;
                 padding: 0 20px;
@@ -192,6 +192,7 @@
 
         .slick-prev{
             z-index: 1;
+            left: -35px;
 
             // Fix for Firefox not being able to click 
             height: 80px;
