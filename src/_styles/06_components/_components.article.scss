@@ -330,22 +330,27 @@
 		.article--full &{
 			@include m-color('article-black');
 			@include font('Breakers-Light');
+			margin-bottom: 16px;
 		}
 		.article--xmedium &{
 			@include m-color('article-black');
 			@include font('Breakers-Light');
+			margin-bottom: 16px;
 		}
 		.article--medium &{
 			@include m-color('article-black');
 			@include font('Breakers-Light');
+			margin-bottom: 16px;
 		}
 		.article--small--full &{
 			@include m-color('white');
 			@include font('Breakers-Light');
+			margin-bottom: 16px;
 		}
 		.article--small--half &{
 			@include m-color('article-black');
 			@include font('Breakers-Light');
+			margin-bottom: 16px;
 		}
 
 		.article--small--full.grid-item-5 &{
@@ -395,7 +400,7 @@
 		&__container{
 			display: flex;
 			align-items: center;
-			margin-bottom: 10px;
+			margin-bottom: 16px;
 
 			.article--small--full.grid-item-5 &{
 				margin-bottom: 0;
