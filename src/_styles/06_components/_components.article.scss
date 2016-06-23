@@ -319,13 +319,9 @@
 
 	// {{article__title}}
 	&__title{
-		text-transform: none;
+		text-transform: uppercase;
 		font-size: 34px;
 		line-height: 1;
-
-		@include mq(large){
-			text-transform: uppercase;
-		}
 
 		.article--full &{
 			@include m-color('article-black');
