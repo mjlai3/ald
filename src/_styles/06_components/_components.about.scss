@@ -17,7 +17,11 @@
 		// {{about__title__container}}
 		&__container{
 			border-bottom: 1px solid grey;
-			margin-bottom: 50px;
+			margin-bottom: 15px;
+
+			@include mq(large){
+				margin-bottom: 50px;
+			}
 		}
 	}
 
@@ -38,14 +42,23 @@
 	&__abstract{
 		@include font('Breakers-Light');
 		@include m-color('about-abstract');
-		font-size: 28px;
+		font-size: 22px;
+
+		@include mq(large){
+			font-size: 28px;
+		}
 	}
 
 	// {{about__button}}
 	&__button{
 		@include m-color('black');
 		text-align: center;
-		margin: 0 25px;
+		margin: 0 16px;
+		flex-shrink: 0;
+
+		@include mq(large){
+			margin: 0 25px;
+		}
 
 		&:hover, &:focus{
 			@include m-color('black');
