@@ -1,0 +1,30 @@
+extends _layouts/base
+
+block content
+	div
+		div.container.container--standard
+			div.row.show-for-large
+				div.columns.large-8.large-centered
+					div.breadcrumb__container
+						ul.breadcrumb__list
+						li.breadcrumb__list__enclosure 
+							a.breadcrumb__list__enclosure__link(href="#") HOME
+						li.breadcrumb__list__enclosure.breadcrumb__list__enclosure--divider -
+						li.breadcrumb__list__enclosure 
+							a.breadcrumb__list__enclosure__link(href="#") CONTACT US
+			div.row
+				div.columns.large-8.large-centered
+					div.contact__title__container
+						div.contact__title Contact us
+					div.contact__content
+						p.contact__abstract Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+						p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+					div.contact__form__container
+						form.contact__form
+							input.contact__form__input(placeholder="Sit voluptatem" type="text")
+							input.contact__form__input(placeholder="Accusantium doloremque" type="text")
+							textarea(placeholder="Quae ab illo inventore")
+							input(type="submit" value="Submit")
+			div.standard__pattern__container.sticky-stop(style="background-image: url('/images/pattern.png');")
+				+subscribe()

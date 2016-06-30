@@ -1,0 +1,74 @@
+.contact{
+
+	// {{contact__title}}
+	&__title{
+		@include font('Breakers-Light');
+		@include m-color('article-black');
+		line-height: 1;
+		margin: 20px 0 10px;
+		font-size: 28px;
+
+		@include mq(large){
+			text-transform: uppercase;
+			margin: 35px 0 30px;
+			font-size: 42px;
+		}
+
+		// {{contact__title__container}}
+		&__container{
+			border-bottom: 1px solid grey;
+			margin-bottom: 50px;
+		}
+	}
+
+	// {{contact__content}}
+	&__content{
+
+	}
+
+	// {{contact__abstract}}
+	&__abstract{
+		@include font('Breakers-Light');
+		@include m-color('about-abstract');
+		font-size: 28px;
+	}
+
+	// {{contact__form}}
+	&__form{
+
+		&__input,textarea,textarea:focus{
+			@include font('Breakers-Light');
+			display: block;
+			box-shadow: none;
+			outline: none;
+			padding: 20px;
+			font-size: 24px;
+			width: 100%;
+			border: 2px solid f-color('contact-border');
+			border-radius: 5px;
+			margin-top: 25px;
+		}
+
+		textarea,textarea:focus{
+			padding-top: 10px;
+			height: 400px;
+			margin-bottom: 0;
+		}
+
+		input[type=submit]{
+			@include font('Breakers-Light');
+			@include m-bgcolor('contact-button');
+			@include m-color('white');
+			border-radius: 5px;
+			border: none;
+			padding: 10px 25px;
+			margin: 25px 0 100px;
+			font-size: 24px;
+		}
+
+		// {{contact__form__container}}
+		&__container{
+			margin-right: 100px;
+		}
+	}
+}
