@@ -1,0 +1,190 @@
+[
+	{
+		"grid":"grid-item-2",
+		"type":"article--full",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"Sed ut perspiciatis unde omnis iste",
+		"background":"/images/unnamed-1-1.jpg",
+		"text": [
+			{
+				"paragraph": "Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc."
+			},
+			{
+				"paragraph": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+			}
+		]
+	},
+	{
+		"type":"article--small--full",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"Architecto beatae vitae dicta sunt explicabo",
+		"background":"/images/8heb700x300-my-asics-why-its-better-than-paper-plan.jpg",
+		"author": [
+			{
+				"image": "103143490_8.jpg",
+				"name": "OSHAY KEY"
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"How to deal with uncertainty",
+		"background":"/images/sunlight.jpg",
+		"author": [
+			{
+				"image": "binge-habit1.jpg",
+				"name": "EMILY BARKER"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"For the love of beter coffee",
+		"background":"/images/coffee-624x413.png",
+		"text": [
+			{
+				"paragraph": "Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit."
+			}
+		]
+	},
+	{
+		"grid":"grid-item-3",
+		"type":"article--xmedium",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"Organise a country getaway in 10 minutes",
+		"background":"/images/Gaia-review.jpg",
+		"author": [
+			{
+				"image": "103143490_8.jpg",
+				"name": "OSHAY KEY"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci."
+			}
+		]
+	},
+	{
+		"type":"article--small--full",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"We're all busy, but don't neglect your girlfriends",
+		"background":"/images/two-girls-walking-arm-in-arm.jpg",
+		"author": [
+			{
+				"image": "88068133_8.jpg",
+				"name": "EVA HERSHAW"
+			}
+		]
+	},
+	{
+		"grid":"grid-item-4",
+		"type":"article--medium",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"Recipe: Breakfast Burrito",
+		"background":"/images/breakfast-burrito.jpg",
+		"author": [
+			{
+				"image": "98876430_8.jpg",
+				"name": "SUZANNE HEYN"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa enim!"
+			}
+		]
+	},
+	{
+		"grid":"grid-item-4",
+		"type":"article--medium",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"Powernaps; who has time for it?",
+		"background":"/images/HMSDW002.jpg",
+		"author": [
+			{
+				"name": "FIONA BAKER"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis."
+			}
+		]
+	},
+	{
+		"type":"article--small--full",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"Recipe: Cauliflower-Parama",
+		"background":"/images/Cauliflower-final.jpg",
+		"author": [
+			{
+				"image": "98876430_8.jpg",
+				"name": "SUZANNE HEYN"
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"All the rage with colouring books",
+		"background":"/images/woman-using-an-adult-colouring-book.jpg",
+		"author": [
+			{
+				"image": "binge-habit1.jpg",
+				"name": "EMILY BARKER"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc."
+			}
+		]
+	},
+	{
+		"type":"article--small--half",
+		"category":"fitness",
+		"tag":"FITNESS",
+		"icon":"fitness-white.png",
+		"title":"Using kettlebells can help with core training",
+		"background":"/images/1460693516.jpg",
+		"author": [
+			{
+				"image": "88693176_8.jpg",
+				"name": "TODD McCULLOUGH"
+			}
+		],
+		"text": [
+			{
+				"paragraph": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
+			}
+		]
+	}
+]

@@ -8,4 +8,13 @@
 			padding-top: 200px;
 		}
 	}
+
+	// {{container--pillar}}
+	&--pillar{
+		padding-top: 101px;
+
+		@include mq(large){
+			padding-top: 200px;
+		}
+	}
 }

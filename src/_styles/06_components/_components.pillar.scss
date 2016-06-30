@@ -1,0 +1,38 @@
+.pillar{
+
+	// {{pillar_display}}
+	&__display{
+		@include font('Breakers-Regular');
+		@include m-color('pillar-display');
+		font-size: 24px;
+
+		// {{pillar__display__container}}
+		&__container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 30px 0;
+		}
+	}
+
+	// {{pillar__img}}
+	&__img{
+		margin: 0 10px;
+	}
+
+	// {{pillar__category}}
+	&__category{
+		@include font('Breakers-Regular');
+		font-size: 24px;
+
+		.page--fitness &{
+			@include m-color('fitness');
+		}
+		.page--lifestyle &{
+			@include m-color('lifestyle');
+		}
+		.page--food &{
+			@include m-color('food');
+		}
+	}
+}
