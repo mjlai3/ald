@@ -1,0 +1,43 @@
+.about{
+
+	// {{about__title}}
+	&__title{
+		@include font('Breakers-Light');
+		@include m-color('article-black');
+		line-height: 1;
+		margin: 20px 0 10px;
+		font-size: 28px;
+
+		@include mq(large){
+			text-transform: uppercase;
+			margin: 35px 0 30px;
+			font-size: 42px;
+		}
+
+		// {{about__title__container}}
+		&__container{
+			border-bottom: 1px solid grey;
+			margin-bottom: 50px;
+		}
+	}
+
+	// {{about__content}}
+	&__content{
+
+		figure{
+			margin: 0 0 16px 0;
+			width: 100%;
+		}
+
+		figcaption{
+
+		}
+	}
+
+	// {{about__abstract}}
+	&__abstract{
+		@include font('Breakers-Light');
+		@include m-color('about-abstract');
+		font-size: 28px;
+	}
+}
