@@ -40,4 +40,40 @@
 		@include m-color('about-abstract');
 		font-size: 28px;
 	}
+
+	// {{about__button}}
+	&__button{
+		@include m-color('black');
+		text-align: center;
+		margin: 0 25px;
+
+		&:hover, &:focus{
+			@include m-color('black');
+			text-decoration: none;
+		}
+
+		// {{about__button__container}}
+		&__container{
+
+			// {{about__button__container--outer}}
+			&--outer{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 45px 0;
+			}
+
+			// {{about__button__container--inner}}
+			&--inner{
+				display: flex;
+				align-items: flex;
+			}
+		}
+
+		// {{about__button__text}}
+		&__text{
+			@include font('Breakers-Regular');
+			font-size: 20px;
+		}
+	}
 }

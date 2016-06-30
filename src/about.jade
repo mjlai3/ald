@@ -38,24 +38,18 @@ block content
 					div.about__button__container
 						div.about__button
 			div.row
-				div.columns.large-12
-					div.filter__container--outer
-						div.filter__container--inner
-							div.filter__button
-								input.filter__checkbox#filter-fitness(type='checkbox', value='fitness')
-								label.filter__checkbox__label(for="filter-fitness")
-									span.filter__checkbox__span.fitness
-									| Fitness
-							div.filter__button
-								input.filter__checkbox#filter-lifestyle(type='checkbox', value='lifestyle')
-								label.filter__checkbox__label(for="filter-lifestyle")
-									span.filter__checkbox__span.lifestyle
-									| Lifestyle
-							div.filter__button
-								input.filter__checkbox#filter-food(type='checkbox', value='food')
-								label.filter__checkbox__label(for="filter-food")
-									span.filter__checkbox__span.food
-									| Food
+				div.columns.large-8.large-centered
+					div.about__button__container--outer
+						div.about__button__container--inner
+							a.about__button(href="#")
+								img(src="/images/filter-fitness-off.png")
+								div.about__button__text Fitness
+							a.about__button(href="#")
+								img(src="/images/filter-lifestyle-off.png")
+								div.about__button__text Lifestyle
+							a.about__button(href="#")
+								img(src="/images/filter-food-off.png")
+								div.about__button__text Food
 			div.standard__pattern__container.sticky-stop(style="background-image: url('/images/pattern.png');")
 				+subscribe()
 
