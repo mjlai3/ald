@@ -12,7 +12,7 @@ block content
 				div.grid
 					div.grid-sizer
 					div.gutter-sizer
-					each val in site.data.articlespillar
+					each val in site.data.pillarfitness
 						- var grid = (val.grid === undefined ? '' : val.grid)
 						div.grid-item(class="#{grid} #{val.type} #{val.category}")
 							a.article__link(href="/standard.html")
@@ -36,7 +36,7 @@ block content
 												p.article__text #{paragraph.paragraph}
 				nav.article__pagination
 					p
-						a(href='pillar-2.html') Page 2
+						a(href='pillar-fitness-2.html') Page 2
 				div.article__more__container
 					img.article__more(src="/images/load-more-2.png")
 		+subscribe()
