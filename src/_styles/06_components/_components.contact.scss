@@ -83,4 +83,14 @@
 			}
 		}
 	}
+
+	// {{contact__success}}
+	&__success{
+		@include font('Breakers-Light');
+		@include m-color('contact-button');
+		display: none;
+		padding: 6px 25px;
+		margin: 25px 0 100px;
+		font-size: 24px;
+	}
 }

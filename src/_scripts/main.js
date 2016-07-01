@@ -218,4 +218,9 @@ $(() => {
 		});
 	}
 
+	$('.contact__form input[type=submit]').click(function(){
+		$(this).hide();
+		$('.contact__success').show();
+	});
+
 });
