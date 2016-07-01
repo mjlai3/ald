@@ -1,4 +1,4 @@
-each val in site.data.articlespillar
+each val in site.data.pillarfood
 	- var grid = (val.grid === undefined ? '' : val.grid)
 	div.grid-item(class="#{grid} #{val.type} #{val.category}")
 		a.article__link(href="/standard.html")

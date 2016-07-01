@@ -1,0 +1,43 @@
+extends _layouts/base
+
+block content
+	div.container.container--pillar.page--lifestyle
+		div.row
+			div.columns.large-12
+				div.pillar__display__container
+					div.pillar__display.show-for-bp480 Displaying articles:
+					img.pillar__img(src="/images/lifestyle-read-2.png")
+					div.pillar__category Lifestyle
+		div.row
+			div.columns.large-12
+				div.grid
+					div.grid-sizer
+					div.gutter-sizer
+					each val in site.data.pillarlifestyle
+						- var grid = (val.grid === undefined ? '' : val.grid)
+						div.grid-item(class="#{grid} #{val.type} #{val.category}")
+							a.article__link(href="/standard.html")
+								div.article__img(style="background-image:url('#{val.background}')")
+									div.article__tag__container--outer
+										div.article__tag__container--inner
+											img.article__icon(src="/images/#{val.icon}")
+											div.article__tag #{val.tag}
+								div.article__text__container--outer
+									div.article__text__container--inner
+										h2.article__title #{val.title}
+										if val.author
+											div.article__author__container
+												if val.author[0].image
+													div.article__author__img(style="background-image:url('/images/#{val.author[0].image}')")
+													div.article__author__name #{val.author[0].name}
+												else
+													div.article__author__name <small>WITH</small> #{val.author[0].name}
+										if val.text
+											each paragraph in val.text
+												p.article__text #{paragraph.paragraph}
+				nav.article__pagination
+					p
+						a(href='pillar-lifestyle-2.html') Page 2
+				div.article__more__container
+					img.article__more(src="/images/load-more-2.png")
+		+subscribe()

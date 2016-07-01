@@ -1,19 +1,19 @@
 extends _layouts/base
 
 block content
-	div.container.container--pillar.page--fitness
+	div.container.container--pillar.page--food
 		div.row
 			div.columns.large-12
 				div.pillar__display__container
 					div.pillar__display.show-for-bp480 Displaying articles:
-					img.pillar__img(src="/images/fitness-read.png")
-					div.pillar__category Fitness
+					img.pillar__img(src="/images/food-read-2.png")
+					div.pillar__category Food
 		div.row
 			div.columns.large-12
 				div.grid
 					div.grid-sizer
 					div.gutter-sizer
-					each val in site.data.articlespillar
+					each val in site.data.pillarfood
 						- var grid = (val.grid === undefined ? '' : val.grid)
 						div.grid-item(class="#{grid} #{val.type} #{val.category}")
 							a.article__link(href="/standard.html")
@@ -37,7 +37,7 @@ block content
 												p.article__text #{paragraph.paragraph}
 				nav.article__pagination
 					p
-						a(href='pillar-2.html') Page 2
+						a(href='pillar-food-2.html') Page 2
 				div.article__more__container
 					img.article__more(src="/images/load-more-2.png")
 		+subscribe()
