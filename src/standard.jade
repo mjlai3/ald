@@ -8,10 +8,10 @@ block content
 					div.breadcrumb__container
 						ul.breadcrumb__list
 						li.breadcrumb__list__enclosure 
-							a.breadcrumb__list__enclosure__link(href="#") HOME
+							a.breadcrumb__list__enclosure__link(href="/") HOME
 						li.breadcrumb__list__enclosure.breadcrumb__list__enclosure--divider -
 						li.breadcrumb__list__enclosure 
-							a.breadcrumb__list__enclosure__link(href="#") FITNESS
+							a.breadcrumb__list__enclosure__link(href="/pillar.html") FITNESS
 						li.breadcrumb__list__enclosure.breadcrumb__list__enclosure--divider -
 						li.breadcrumb__list__enclosure 
 							a.breadcrumb__list__enclosure__link(href="#") TRAINING
@@ -97,7 +97,7 @@ block content
 								- var grid = (val.grid === undefined ? '' : val.grid)
 								div.slick__container--standard__frame
 									div.grid-item--slick-standard(class="#{grid} #{val.type} #{val.category}")
-										a.article__link(href="#")
+										a.article__link(href="/standard.html")
 											div.article__img(style="background-image:url('#{val.background}')")
 												div.article__tag__container--outer
 													div.article__tag__container--inner
