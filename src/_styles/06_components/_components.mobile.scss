@@ -3,7 +3,7 @@
 	// {{mobile__menu}}
 	&__menu{
 		@include m-zindex('mobile-menu');
-	    //background-image: url('/images/pattern-transparent.png');
+	    background-image: url('/images/pattern-dark.png');
 	    background-size: 75%;
 	    background-color: rgba(82, 154, 204, 1);
 	    display: none;
