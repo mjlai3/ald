@@ -9,7 +9,7 @@
         pointer-events: auto;
 
         @include mq(large){
-            padding: 235px 0 35px; // padding top for more space for header 
+            padding: 235px 0 23px; // padding top for more space for header 
         }
 
         // {{slick__container--index__frame}}
@@ -113,7 +113,7 @@
 
         // Container that holds all dots
         .slick-dots {
-            margin-top: 30px;
+            margin-top: 15px;
             position: static;
         }
 
