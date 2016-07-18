@@ -18,16 +18,17 @@
 			@include m-color('white');
 			@include font('Breakers-Bold');
 			position: absolute;
+			text-align: center;
 			top: 0;
 			left: 0;
 			width: 55px;
 			font-size: 12px;
-			text-align: center;
 
 			@include mq(large){
 				font-size: inherit;
-				padding: 10px;
-				width: 100px;
+				padding: 2px 20px 0;
+   				width: auto;
+   				height: 30px;
 			}
 
 			.page--fitness &{

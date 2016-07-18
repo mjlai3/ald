@@ -17,6 +17,7 @@
 				.article__tag__container--outer{
 					height: 100%;
 					width: 100%;
+					display: flex;
 
 					.lifestyle &{
 						background-color: rgba(219, 154, 196, 0.8);
@@ -70,37 +71,34 @@
 			//{{article__tag__container--outer}}
 			&--outer{
 				@include m-color('white');
-				padding: 5px;
-				font-size: 14px;
-				font-weight: 600;
-				display: flex;
+				display: inline-block;
 				justify-content: center;
 				align-items: center;
+				width: auto;
+				vertical-align: top;
+				padding: 2px 20px;
+				font-size: 14px;
+				font-weight: 600;
 				height: 20px;
-				width: 60px;
 
 				@include mq(medium){
-					width: 80px;
 					height: 25px;
 				}
 
 				.article--full &{
 					@include mq(large){
-						width: 11.842117728%;
 						height: 30px;
 					}
 				}
 
 				.article--xmedium &{
 					@include mq(large){
-						width: 23.684210526%;
 						height: 30px;
 					}
 				}
 
 				.article--medium &{
 					@include mq(large){
-						width: 32.142857142%;
 						height: 30px;
 					}
 				}
@@ -110,25 +108,23 @@
 					position: absolute;
 
 					@include mq(large){
-						width: 25%;
-						height: auto;
+						height: 30px;
 					}
 				}
 
 				.article--small--half &{
 					@include m-zindex('tags');
 					@include mq(large){
-						width: 25%;
 						height: 30px;
 					}
 				}
 
 				.grid-item-5 &, .grid-item-7 &{
-					width: 80px;
+
 				}
 
 				.grid-item-6 &{
-					width: 60px;
+					height: auto;
 				}
 
 				.lifestyle &{
