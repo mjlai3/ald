@@ -190,6 +190,12 @@ $(() => {
 		$(this).fadeOut();
 	});
 
+	// Close subscribe menu
+	$('.mobile__subscribe__close__icon').click(function(){
+		$('.mobile__subscribe__container--outer').fadeOut();
+		$('.overlay').fadeOut();
+	});
+
 	if ($('.sticky').length) { // make sure ".sticky" element exists
 		var el = $('.sticky');
 		var stickyTop = $('.sticky').offset().top; // returns number
