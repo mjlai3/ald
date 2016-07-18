@@ -343,6 +343,10 @@
 		font-size: 34px;
 		line-height: 1;
 
+		& + .article__text{
+			margin-top: 5px;
+		}
+
 		.article--full &{
 			@include m-color('article-black');
 			@include font('Breakers-Light');
@@ -374,6 +378,10 @@
 			font-size: 15px;
 			margin-bottom: 0;
 
+			@include mq(medium){
+				font-size: 25px;
+			}
+
 			@include mq(large){
 				font-size: 34px;
 				margin-bottom: 8px;
@@ -393,6 +401,10 @@
 			@include font('Breakers-Regular');
 			font-size: 15px;
 			margin-bottom: 0;
+
+			@include mq(medium){
+				font-size: 20px;
+			}
 
 			@include mq(large){
 				font-size: 34px;

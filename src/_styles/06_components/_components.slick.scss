@@ -19,6 +19,10 @@
             outline: none;
             padding: 0 10px;
 
+            @include mq(medium){
+                height: 500px;
+            }
+
             @include mq(large){
                 height: 700px;
                 padding: 0;

@@ -237,6 +237,8 @@
 			// {{mobile__subscribe__container--inner}}
 			&--inner{
 				@include m-bgcolor('mobile-menu');
+				background-image: url('/images/pattern-dark.png');
+				background-size: 75%;
 				margin: auto;
 				overflow: hidden;
 				text-align: center;
