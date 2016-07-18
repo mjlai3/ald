@@ -4,7 +4,9 @@
 	&__container{
 		@include m-bgcolor('subscribe');
 		text-align: center;
-		padding: 50px 0 55px;
+	    background-image: url('/images/pattern-dark.png');
+	    background-size: 25%;
+		padding: 60px 0;
 		
 		.container--standard &{
 			background-color: rgba(88, 162, 209, 0.8);
