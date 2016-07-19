@@ -20,9 +20,16 @@
 	width: 100%;
 	margin-bottom: 3.44827586206897%;
 
+	@include mq(medium){
+		height: 480px;
+		width: 50%;
+		margin-bottom: 1.44827586206897%;
+	}
+
 	@include mq(large){
 		height: 480px;
 		width: 31.03448275862069%;
+		margin-bottom: 3.44827586206897%;
 	}
 }
 
@@ -51,12 +58,20 @@
 .grid-item-3 {
 	width: 100%;
 
+	@include mq(medium){
+		width: 50%;
+	}
+
 	@include mq(large){
 		width: 65.5171724138%;
 	}
 }
 .grid-item-4 {
 	width: 100%;
+
+	@include mq(medium){
+		width: 50%;
+	}
 
 	@include mq(large){
 		width: 48.27586206896552%;
