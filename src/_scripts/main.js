@@ -50,12 +50,6 @@ $(() => {
 
 	var grid = $('.grid');
 
-	// grid.packery({
-	// 	itemSelector: '.grid-item',
-	// 	gutter: '.gutter-sizer',
-	// 	rowHeight: 480
-	// });
-
 	grid.masonry({
 		itemSelector: '.grid-item',
 		columnWidth: '.grid-sizer',
