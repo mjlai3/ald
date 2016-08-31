@@ -49,6 +49,8 @@ $(() => {
 	});
 
 	var grid = $('.grid');
+	var moreUrl = $('.grid').data("infinite-scroll");
+	var gridCount = $(".grid").children('.grid-item').length;
 
 	grid.masonry({
 		itemSelector: '.grid-item',
@@ -68,7 +70,32 @@ $(() => {
 		itemSelector: '.grid-item',
 
 		// Loading message
-		loadingText: 'Loading new items…'
+		loadingText: 'Loading new items…',
+
+		loading: {
+		    finishedMsg: "<h2>No more articles</h2>"
+		},
+
+		errorCallback: function () {
+		    var endCount = $(".grid").children('.grid-item').length;
+		    if (endCount % 11 != 0 || gridCount == endCount) {
+		        $('.article__more__container').hide();
+		        $("<h2>No more articles</h2>").insertAfter('.grid');
+		    }
+		},
+
+	    //path: ["/api/sitecore/Home/getarticles?count=", ""]
+		path: function (pageNumber) {
+		    var pillar = window.location.pathname.split("/");
+            if(pillar[2] == "")
+                return moreUrl + "?count=" + pageNumber;
+			else if(pillar[1] == "search")
+                return moreUrl + "&count=" + pageNumber;
+            else if (pillar[3] == "")
+                return moreUrl + "?pillar=" + pillar[2] + "&count=" + pageNumber;
+            else
+                return moreUrl + "?pillar=" + pillar[2] + "&subcategory=" + pillar[3]  + "&count=" + pageNumber;
+		}	
 	},
 
 	// Function called once the elements are retrieved
@@ -218,9 +245,47 @@ $(() => {
 		});
 	}
 
+	// Success message for contact form
 	$('.contact__form input[type=submit]').click(function(){
 		$(this).hide();
 		$('.contact__success').show();
+	});
+
+	// expand/collapse mobile menu pillar
+	$('.mobile__menu__button__container.fitness, .mobile__menu__button__container.lifestyle, .mobile__menu__button__container.food').click(function(){
+		if(!$(this).hasClass('active')){
+			$('.mobile__menu__button__text').hide();
+			$('.mobile__menu__button__container').removeClass('active');
+			$(this).find('.mobile__menu__button__text').show();
+			$(this).addClass('active');
+		}
+		else{
+			$('.mobile__menu__button__text').show();
+			$(this).removeClass('active');
+		}
+		return false;
+	});
+
+	// Alter twitter share text depending on which button was clicked
+	$('a.addthis_button_twitter').click(function(){
+		if($(this).hasClass('standard__twitter-quote')){
+			addthis_share = {
+				passthrough : {
+					twitter: {
+						text: "\"" + $(this).find('span').text() + "\""
+					}
+				}
+			}
+		}
+		else if($(this).hasClass('standard__social__container--inner')){
+			addthis_share = {
+				passthrough : {
+					twitter: {
+						text: 'A Little Dash'
+					}
+				}
+			}
+		}
 	});
 
 });

@@ -11,7 +11,8 @@ mixin header(spec)
 						img.header__menu__img(src="/images/menu.png", alt="menu icon")
 						div.header__menu__text.show-for-large Menu
 					a(href="/")
-						img.header__logo(src="/images/ALD-logo.png", alt="logo")
+						img.header__logo.header__logo--v(src="/images/ALD-logo.png", alt="logo")
+						img.header__logo.header__logo--h(src="/images/ALD-logo-h.svg", alt="logo")
 					div.header__right__container
 						div.header__media__container.show-for-large
 							a(href="#")
@@ -25,32 +26,54 @@ mixin header(spec)
 								img.header__subscribe-white(src="/images/subscribe-white.png", alt="subscribe")
 						img.header__search(src="/images/search-shadow.png", alt="search")
 	div.mobile__menu
-		div.mobile__menu__close__container
-			img.mobile__menu__close__icon(src='/images/menu-close.png')
-			div.mobile__menu__close__text Menu
-		a.mobile__menu__button__container.fitness(href="/pillar-fitness.html")
-			div.mobile__menu__button__icon__container
-				img(src='/images/fitness-nav.png')
-			div.mobile__menu__button__text Fitness
-		a.mobile__menu__button__container.lifestyle(href="/pillar-lifestyle.html")
-			div.mobile__menu__button__icon__container
-				img(src='/images/lifestyle-nav.png')
-			div.mobile__menu__button__text Lifestyle
-		a.mobile__menu__button__container.food(href="/pillar-food.html")
-			div.mobile__menu__button__icon__container
-				img(src='/images/food-nav.png')
-			div.mobile__menu__button__text Food
-		a.mobile__menu__button__container(href="/")
-			div.mobile__menu__button__icon__container
-				img(src='/images/a-nav.png')
-			div.mobile__menu__button__text Home
-		a.mobile__menu__button__container(href="/about.html")
-			div.mobile__menu__button__icon__container
-			div.mobile__menu__button__text About
-		a.mobile__menu__button__container(href="/contact.html")
-			div.mobile__menu__button__icon__container
-			div.mobile__menu__button__text Contact
-		div.mobile__line
+		div.mobile__menu--inner
+			div.mobile__menu__close__container
+				img.mobile__menu__close__icon(src='/images/menu-close.png')
+				div.mobile__menu__close__text Menu
+			a.mobile__menu__button__container.fitness(href="")
+				div.mobile__menu__button__icon__container
+					img(src='/images/fitness-nav.png')
+				div.mobile__menu__button__text Fitness
+			ul
+				li
+					a(href="#") Fitness
+				li
+					a(href="#") Aenean
+				li
+					a(href="#") Cum sociis
+			a.mobile__menu__button__container.lifestyle(href="")
+				div.mobile__menu__button__icon__container
+					img(src='/images/lifestyle-nav.png')
+				div.mobile__menu__button__text Lifestyle
+			ul
+				li
+					a(href="#") Lifestyle
+				li
+					a(href="#") Aenean
+				li
+					a(href="#") Cum sociis
+			a.mobile__menu__button__container.food(href="")
+				div.mobile__menu__button__icon__container
+					img(src='/images/food-nav.png')
+				div.mobile__menu__button__text Food
+			ul
+				li
+					a(href="#") Food
+				li
+					a(href="#") Aenean
+				li
+					a(href="#") Cum sociis
+			a.mobile__menu__button__container(href="/")
+				div.mobile__menu__button__icon__container
+					img(src='/images/a-nav.png')
+				div.mobile__menu__button__text Home
+			a.mobile__menu__button__container(href="/about.html")
+				div.mobile__menu__button__icon__container
+				div.mobile__menu__button__text About
+			a.mobile__menu__button__container(href="/contact.html")
+				div.mobile__menu__button__icon__container
+				div.mobile__menu__button__text Contact
+			div.mobile__line
 	div.mobile__search__container--outer
 		div.mobile__search__container--center
 			div.mobile__search__container--inner
@@ -68,7 +91,7 @@ mixin header(spec)
 				div.subscribe__text Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet direct to your inbox, for busy people.
 				div.subscribe__text--bold.show-for-large I'm interested in
 				div.subscribe__mobile__btn.hide-for-large Subscribe here
-				form.subscribe__form.show-for-large(action="/", method="post")
+				form.subscribe__form.show-for-large#subscribe-form-1(action="/", method="post")
 					div.subscribe__checkbox__container
 						input.subscribe__checkbox#subscribe-mobile-fitness(type='checkbox', name='subscribe-mobile-checkbox')
 						label.subscribe__checkbox__label(for='subscribe-mobile-fitness')
@@ -83,5 +106,9 @@ mixin header(spec)
 							span.subscribe__checkbox__span
 							| Food
 					div.subscribe__input__container
-						input.subscribe__input(placeholder="Your email..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email...'")
+						input.subscribe__input#subscribe-fname-1(placeholder="First name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First name'")
+					div.subscribe__input__container
+						input.subscribe__input#subscribe-lname-1(placeholder="Last name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last name'")
+					div.subscribe__input__container
+						input.subscribe__input.subscribe__input--email#subscribe-email-1(placeholder="Your email..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email...'")
 						div.subscribe__submit Submit

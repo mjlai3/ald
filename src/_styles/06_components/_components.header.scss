@@ -154,12 +154,29 @@
 			height: 152px;
 		}
 
+		&--v{
+			display: inline-block;				
+		}
+
+		&--h{
+			display: none;				
+		}
+
 		// Smaller version of the header when scrolling up
 		.headroom.headroom--not-bottom.headroom--not-top.headroom--pinned &, .headroom.headroom--not-bottom.headroom--not-top.headroom--unpinned &{
-			height: 80px;
+			
+			height: 110px;
 
 			@include mq(large){
-				height: 60px;
+				height: 90px;
+			}
+
+			&--v{
+				display: none;				
+			}
+
+			&--h{
+				display: inline-block;				
 			}
 		}
 	}

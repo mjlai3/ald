@@ -28,7 +28,7 @@
 */
 
 @mixin font($font){
-	font-family: $font;
+	font-family: $font, 'Helvetica Neue', Arial, sans-serif;
 	font-weight: normal;
 	font-style: normal;
 }

@@ -13,7 +13,17 @@
 	    left: 0;
 	    right: 0;
 	    max-width: 400px;
-	    padding: 10px;
+	    
+	    // {{mobile__menu--inner}}
+	    &--inner{
+	    	padding: 5px;
+	    	position: relative;
+	    	height: 100%;
+
+	    	@include mq(large){
+	    		padding: 10px;
+	    	}
+	    }
 
 	    // {{mobile__menu__close}}
 	    &__close{
@@ -43,7 +53,7 @@
 
 	    	// {{mobile__menu__close__icon}}
 	    	&__icon{
-	    		margin-right: 20px;
+	    		margin-right: 28px;
 	    		margin-left: 10px;
 	    		width: 25px;
 
@@ -61,11 +71,10 @@
 	    	&__container{
 	    		display: flex;
 	    		align-items: center;
-	    		padding: 7px 0;
-	    		margin-bottom: 10px;
+	    		margin-bottom: 5px;
 
 	    		@include mq(large){
-	    			padding: 5px 0 10px;
+	    			margin-bottom: 10px;
 	    		}
 
 	    		&:hover, &:focus{
@@ -74,13 +83,58 @@
 	    		}
 
 	    		&.fitness{
-	    			@include m-bgcolor('fitness');
+	    			& + ul{
+	    				@include m-bgcolor('fitness');
+	    			}
 	    		}
 	    		&.lifestyle{
-	    			@include m-bgcolor('lifestyle');
+	    			& + ul{
+	    				@include m-bgcolor('lifestyle');
+	    			}
 	    		}
 	    		&.food{
-	    			@include m-bgcolor('food');
+	    			& + ul{
+	    				@include m-bgcolor('food');
+	    			}
+	    		}
+
+	    		& + ul{
+	    			position: absolute;
+	    			list-style: none;
+	    			display: none;
+	    			top: 0;
+	    			bottom: 0;
+	    			left: 78px;
+	    			right: 0;
+	    			margin: 0;
+	    			padding: 105px 25px 10px;
+
+	    			@include mq(large){
+	    				padding: 210px 25px 10px;
+	    				left: 87px;
+	    			}
+
+	    			li{
+	    				&:first-child{
+	    					a{
+	    						font-weight: 600;
+	    					}
+	    				}
+
+	    				a{
+			    			@include font('Breakers-Light');
+			    			@include m-color('white');
+			    			font-size: 24px;
+
+			    			@include mq(large){
+			    				font-size: 32px;
+			    			}
+	    				}
+	    			}
+	    		}
+
+	    		&.active + ul{
+	    			display: block;
 	    		}
 	    	}
 
@@ -89,10 +143,24 @@
 	    		@include m-color('white');
 	    		@include font('Breakers-Regular');
 	    		font-size: 23px;
+	    		width: 100%;
+    			height: 48px;
+    			padding: 7px 0 0 10px;
 
 	    		@include mq(large){
 	    			font-size: 32px;
-	    			padding-top: 5px;
+	    			padding: 10px 0 0 10px;
+    				height: 68px;
+	    		}
+
+	    		.fitness &{
+	    			@include m-bgcolor('fitness');
+	    		}
+	    		.lifestyle &{
+	    			@include m-bgcolor('lifestyle');
+	    		}
+	    		.food &{
+	    			@include m-bgcolor('food');
 	    		}
 	    	}
 
@@ -101,12 +169,27 @@
 
 	    		// {{mobile__menu__button__icon__container}}
 	    		&__container{
+	    			display: flex;
+	    			align-items: center;
+	    			justify-content: center;
 	    			text-align: center;
-	    			width: 75px;
+	    			flex-shrink: 0;
+	    			width: 68px;
+	    			height: 48px;
 
 	    			@include mq(large){
-	    				width: 60px;
+    					height: 68px;
 	    			}
+
+		    		.fitness &{
+		    			@include m-bgcolor('fitness');
+		    		}
+		    		.lifestyle &{
+		    			@include m-bgcolor('lifestyle');
+		    		}
+		    		.food &{
+		    			@include m-bgcolor('food');
+		    		}
 
 	    			img{
 	    				width: 35px;

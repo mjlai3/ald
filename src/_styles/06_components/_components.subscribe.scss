@@ -96,14 +96,13 @@
 		@include font('Breakers-Regular');
 		font-size: 17px;
 		padding: 15px 25px;
-		border-bottom-left-radius: 5px;
-		border-top-left-radius: 5px;
-		width: 70%;
+		border-radius: 5px;
 		border: 1px solid grey;
+		width: 100%;
 		box-shadow: none;
-		border-right: none;
 		outline: none;
 		transition: all 0.3s ease-in-out;
+		min-height: 47px;
 
 		@include mq(xxlarge){
 			font-size: 21px;
@@ -111,6 +110,17 @@
 
 		&::-webkit-input-placeholder{
 			@include m-color('subscribe-placeholder');
+		}
+
+		// {{subscribe__input--email}}
+		&--email{
+			border-radius: 5px 0 0 5px;
+			border-right: none;
+			width: 70%;
+
+			&#subscribe-email-1{
+				width: 100%;
+			}
 		}
 
 		.mobile__subscribe &{

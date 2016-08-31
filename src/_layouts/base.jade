@@ -45,6 +45,11 @@ body
 		script(src="//npmcdn.com/headroom.js@0.9.3/dist/headroom.min.js")
 		script(src="//npmcdn.com/headroom.js@0.9.3/dist/jQuery.headroom.min.js")
 		script(src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5735754b28f7188e")
+		script.
+			var addthis_config = {
+				data_track_clickback: false 
+			}
+			var addthis_share = addthis_share || {}
 		script(src= baseUrl + 'scripts/main.js')
 		script.
 			$(document).foundation();
